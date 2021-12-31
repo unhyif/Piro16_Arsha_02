@@ -3,10 +3,9 @@
 @import "jihyun/animations.css";
 
 /* ======= Eun-Ipsam Section ======= */
-
 section#eun-ipsam {
   background-color: var(--light-blue);
-  padding: 12rem 0 13rem 0;
+  padding: 12rem 0 13.6rem 0;
 }
 .eun-ipsam__content {
   display: flex;
@@ -36,11 +35,9 @@ section#eun-ipsam {
 .eup-ipsam__img-wrapper img {
   width: 52.639rem;
 }
-
 /* End Eun-Ipsam Section */
 
 /* ======= Skills Section ======= */
-
 section#skills {
   padding: 6rem 0;
 }
@@ -110,3 +107,30 @@ section#skills {
 .each-skill:last-child .percent {
   width: 55%;
 }
+/* End SKills Section */
+
+/* ======= Services Section ======= */
+section#services {
+  background-color: var(--light-blue);
+  padding: 6rem 0;
+}
+.services__center-align {
+  width: 111.6rem;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.services__title {
+  height: 5.84rem;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.services__sub {
+  line-height: 1.5;
+}
+/* End Services Section */
