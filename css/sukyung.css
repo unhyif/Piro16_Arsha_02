@@ -228,6 +228,7 @@ body {
 .hero-text {
     width: 48%;
     padding-right: 1.2rem;
+    padding-top: 1.2rem;
 }
 
 .hero-text h1 {
@@ -242,6 +243,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 5rem;
     font-weight: 600;
+    line-height: 1.2;
     font-size: 2.4rem;
 }
 
@@ -265,13 +267,13 @@ body {
 .clients-container {
     width: 132rem;
     height: 7.82rem;
-    margin: 0 auto;
-    padding: 0 1.2rem;
+    margin: auto;
 }
 
 .clients-container-row {
     display: flex;
     width: 132rem;
+    height: 100%;
 }
 
 .clients-container-row__icon {
@@ -283,6 +285,7 @@ body {
 
 .clients-container-row__icon img {
     max-width: 45%;
+    width: 8.8rem;
     /* transition: all 0.4s ease-in-out; */
     display: inline-block;
     padding: 1.5rem 0;
