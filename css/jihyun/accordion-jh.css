@@ -1,4 +1,5 @@
 .accordion-jh__li {
+  width: 51.294rem;
   background: white;
   border-radius: 0.4rem;
   padding: 2.3rem 2rem;
@@ -16,7 +17,7 @@
 
 .accordion-jh__li label {
   color: #343a40;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   position: relative;
   display: flex;
   align-items: center;
@@ -38,8 +39,8 @@
 .accordion-jh__li i {
   font-size: 1.3rem;
   position: absolute;
-  right: 0;
-  top: 0.2rem;
+  right: 0.3rem;
+  top: 0.3rem;
 }
 .accordion-jh__li .fa-chevron-up {
   display: none;
