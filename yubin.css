@@ -1,0 +1,122 @@
+@import "css/variables.css";
+
+#cta .center-align {
+  margin: auto auto;
+  width: auto;
+}
+
+#cta .container {
+  max-width: 1320px; /*이거 반응형 기준이라 좀 애매.. */
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#cta .row {
+  --bs-gutter-x: 1.5rem; /*이걸로 문장 길이조절 */
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+#cta .row > * {
+  flex-shrink: 0; /*이게뭐지?*/
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+#cta h3 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: "Jost", sans-serif;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+#cta p {
+  color: #fff;
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 1.6rem;
+  line-height: 2.3rem;
+}
+
+#cta .cta-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#cta .cta-btn:hover {
+  background-color: #47b2e4;
+  border: 2px solid #47b2e4;
+}
+
+#cta .cta-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#cta .col-lg-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+#cta .col-lg-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+#cta .text-lg-start {
+  text-align: left !important;
+}
+
+#cta .text-center {
+  text-align: center !important;
+}
+
+#cta {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+    url(https://bootstrapmade.com/demo/templates/Arsha/assets/img/cta-bg.jpg)
+      fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+[data-aos^="zoom"][data-aos^="zoom"].aos-animate {
+  opacity: 1;
+  transform: translateZ(0) scale(1);
+}
+
+[data-aos][data-aos-easing="ease-in-out"],
+body[data-aos-easing="ease-in-out"] [data-aos] {
+  transition-timing-function: ease-in-out;
+}
+
+[data-aos][data-aos-duration="1000"],
+body[data-aos-duration="1000"] [data-aos] {
+  transition-duration: 1s;
+}
+
+[data-aos^="zoom"][data-aos^="zoom"] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
