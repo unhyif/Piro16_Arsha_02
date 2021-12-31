@@ -2,8 +2,16 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    
     padding-bottom: 30px;
 }                                                                                                                                                             
+
+.section__title h2 {
+    position: relative;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
 
 .section__title h2::before{
     content: "";
