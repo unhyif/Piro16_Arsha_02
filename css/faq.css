@@ -1,0 +1,120 @@
+/* FAQ -기능*/
+#faq{
+    background: var(--light-blue);
+    padding: 60px 0;
+}
+
+.faq-hiddenPara{
+    display:none;
+}
+
+.faq-hiddenPara-btn .faq-icon .fa-chevron-up{
+    display: none;
+}
+
+.faq-hiddenPara-btn:hover{
+    color: var(--sky-blue);
+}
+
+
+#first-btn:checked ~ .faq-hiddenPara-btn{
+    color: var(--sky-blue);
+}
+#second-btn:checked ~ .faq-hiddenPara-btn{
+    color: var(--sky-blue);
+}
+#third-btn:checked ~ .faq-hiddenPara-btn{
+    color: var(--sky-blue);
+}
+#fourth-btn:checked ~ .faq-hiddenPara-btn{
+    color: var(--sky-blue);
+}
+#fifth-btn:checked ~ .faq-hiddenPara-btn{
+    color: var(--sky-blue);
+}
+
+
+#first-btn:checked ~ .faq-hiddenPara{
+    display: block;
+    width: 100%;
+    height:auto;
+}
+#second-btn:checked ~ .faq-hiddenPara{
+    display: block;
+    width: 100%;
+    height:auto;
+}
+#third-btn:checked ~ .faq-hiddenPara{
+    display: block;
+    width: 100%;
+    height:auto;
+}
+#fourth-btn:checked ~ .faq-hiddenPara{
+    display: block;
+    width: 100%;
+    height:auto;
+}
+#fifth-btn:checked ~ .faq-hiddenPara{
+    display: block;
+    width: 100%;
+    height:auto;
+}
+
+#first-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
+    display: block;
+}
+#first-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
+    display: none;
+}
+
+#second-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
+    display: block;
+}
+#second-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
+    display: none;
+}
+
+#third-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
+    display: block;
+}
+#third-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
+    display: none;
+}
+
+#fourth-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
+    display: block;
+}
+#fourth-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
+    display: none;
+}
+
+#fifth-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
+    display: block;
+}
+#fifth-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
+    display: none;
+}
+
+/* faq design */
+.faq-main{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.faq-hidden li{
+    position: relative;
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.faq-icon i{
+    position: absolute;
+    right: 25px;
+    top: 22px;
+}
+
+.faq-hiddenPara{
+    padding-top: 15px;
+    height: auto;
+}
