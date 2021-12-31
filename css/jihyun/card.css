@@ -7,7 +7,31 @@
   width: 26.1rem;
   padding: 5rem 3rem;
   background: #fff;
+  transform: scale(0.5);
+  opacity: 0;
+  position: relative;
+  animation: expand 1s ease-in-out forwards;
+  transition: all 1s ease-in-out; /* need to fix! */
 }
+.card:first-child {
+  animation-delay: 4s;
+}
+.card:nth-child(2) {
+  animation-delay: 4.2s;
+}
+.card:nth-child(3) {
+  animation-delay: 4.4s;
+}
+.card:last-child {
+  animation-delay: 4.6s;
+}
+.card:hover {
+  bottom: 1rem;
+}
+.card:hover h4 {
+  color: var(--sky-blue);
+}
+
 .card i {
   display: block;
   height: 4rem;
@@ -22,9 +46,6 @@
   font-size: 2.4rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
-}
-.card h4:hover {
-  color: var(--sky-blue);
 }
 .card p {
   font-size: 1.4rem;

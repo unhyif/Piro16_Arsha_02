@@ -1,0 +1,49 @@
+/* animations in Eup-Ipsam Section */
+@keyframes upwards {
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes expand {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* animations in Skills Section */
+@keyframes toTheRight {
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes toTheLeft {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+/* animations in Skills Section */
+@keyframes progress1 {
+  to {
+    width: 100%;
+  }
+}
+@keyframes progress2 {
+  to {
+    width: 90%;
+  }
+}
+@keyframes progress3 {
+  to {
+    width: 75%;
+  }
+}
+@keyframes progress4 {
+  to {
+    width: 55%;
+  }
+}
