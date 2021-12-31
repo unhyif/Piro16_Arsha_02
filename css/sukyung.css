@@ -333,7 +333,19 @@ body {
 .hero-text {
     width: 48%;
     padding-right: 1.6rem;
-    padding-top: 1.2rem;
+    padding-top: 1.2rem;    
+    animation: startFadeIn 1s ease-in-out;
+}
+
+@keyframes startFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
 }
 
 .hero-text h1 {
@@ -361,7 +373,7 @@ body {
 .hero-img img {
     width: 100%;
     height: 100%;
-    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both, imageStartfadeIn 1s ease-in-out;
 }
 
 /*float image animation*/
@@ -372,6 +384,18 @@ body {
     }
     to{
         transform:translateY(-1rem);
+    }
+}
+
+/*refresh animation*/
+@keyframes imageStartfadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale: (1);
+        opacity: 1;
     }
 }
 
