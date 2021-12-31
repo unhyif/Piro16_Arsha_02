@@ -4,15 +4,17 @@
 
 /* ======= Eun-Ipsam Section ======= */
 
+.eun-ipsam__center-align {
+  margin-left: 11rem;
+}
 section#eun-ipsam {
   background-color: var(--light-blue);
-  padding-top: 12.5rem;
+  padding: 12rem 0 13rem 0;
 }
 .eun-ipsam__content {
   display: flex;
+  justify-content: space-between;
 }
-
-/* eun-ipsam text-wrapper */
 
 .eup-ipsam__text-wrapper {
   display: flex;
@@ -22,7 +24,7 @@ section#eun-ipsam {
 .eun-ipsam__title {
   color: var(--dark-blue);
   font-family: "Jost", sans-serif;
-  font-size: var(--section__title-font-size);
+  font-size: 3.4rem;
   line-height: 1.2;
   margin-bottom: 0.8rem;
 }
@@ -34,10 +36,11 @@ section#eun-ipsam {
 }
 
 .eup-ipsam__img-wrapper {
-  width: 52.639rem;
+  display: flex;
+  align-items: center;
 }
-img {
-  width: 100px;
+.eup-ipsam__img-wrapper img {
+  width: 52.639rem;
 }
 
 /* End Eun-Ipsam Section */
