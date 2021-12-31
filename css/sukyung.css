@@ -4,8 +4,12 @@ body {
 }
 
 /*제일 위 헤더*/
+/*헤더에도 스크롤이 생기는 문제... 는 아르샤는 헤더 아래에 html이 다시 시작해서 그런걸까 하는 짐작.*/
 #header {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background: #fff;
     height: 6.5rem;
@@ -53,7 +57,7 @@ body {
 }
 
 .header-preview li a i {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
 }
 
 .header-preview li a.header-preview__highlight {
@@ -88,8 +92,8 @@ body {
 
 .header-navigate__middle {
     width: 16.2rem;
-    height: 4rem;
-    background: var(--sky-blue);
+    height: 4.1rem;
+    background: rgb(0, 166, 235);
 }
 
 .header-navigate__middle i {
@@ -97,8 +101,9 @@ body {
 }
 
 .header-navigate__middle span {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding-left: 0.7rem;
+    vertical-align: bottom;
     color: white;
 }
 
@@ -119,6 +124,7 @@ body {
     top: 6.5rem;
     right: 0;
     left: 0;
+    height: 7.25rem;
     padding: 1.5rem 0;
     color: white;
     display: flex;
@@ -160,18 +166,20 @@ body {
 }
 
 #s-header-nav__start {
-    padding: 0.8rem 2rem;
+    padding: 0.9rem 2rem;
     margin-left: 3rem;
     border-radius: 5rem;
     font-size: 1.4rem;
+    font-weight: 600;
     border: 0.2rem solid var(--sky-blue);
 }
 
 /*첫 세션*/
 #hero {
     background-color: var(--dark-blue);
-    padding: 6rem 0;
+    padding: 10.5rem 0 6rem 0;
     overflow: hidden;
+    width: 100%;
 }
 
 .hero-container {
@@ -182,6 +190,8 @@ body {
 .hero-row {
     display: flex;
     align-items: center;
+    width: 132rem;
+    height: 52.6rem;
 }
 
 .hero-button-row {
@@ -194,7 +204,8 @@ body {
 .hero-button-row__button {
     color: white;
     border-radius: 5rem;
-    padding: 1rem 2.8rem 1.1rem 2.8rem;
+    margin-top: 1rem;
+    padding: 1.3rem 2.8rem 1.4rem 2.8rem;
     background-color: #47b2e4;
 }
 
@@ -215,7 +226,8 @@ body {
 }
 
 .hero-text {
-    width: 50%;
+    width: 48%;
+    padding-right: 1.2rem;
 }
 
 .hero-text h1 {
@@ -229,12 +241,14 @@ body {
 .hero-text h2 {
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 5rem;
+    font-weight: 600;
     font-size: 2.4rem;
 }
 
 .hero-img {
-    width: 50%;
-    height: auto;
+    width: 66rem;
+    height: 52.6rem;
+    padding: 0 0 0 2.6rem;
 }
 
 .hero-img img {
@@ -250,6 +264,7 @@ body {
 
 .clients-container {
     width: 132rem;
+    height: 7.82rem;
     margin: 0 auto;
     padding: 0 1.2rem;
 }
@@ -271,4 +286,5 @@ body {
     /* transition: all 0.4s ease-in-out; */
     display: inline-block;
     padding: 1.5rem 0;
+    filter: grayscale(100%);
 }
