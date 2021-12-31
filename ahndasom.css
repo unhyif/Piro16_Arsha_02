@@ -262,7 +262,7 @@ left: calc(50% - 20px);
     color: var(--sky-blue);
 }
 
-.links-bold {
+.ads-bold {
     font-weight: bold;
 }
 
@@ -300,4 +300,34 @@ left: calc(50% - 20px);
 .links-icon img {
     width: 18px;
     height: 18px;
+}
+
+
+
+
+#copyright {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--dark-blue);
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#copyright-left {
+    float:left;
+    font-size: 14px;
+}
+
+#copyright-right {
+    float:right;
+    font-size: 13px;
+}
+#copyright-right a {
+    color: var(--sky-blue);
+    opacity: 0.85;
+    cursor: default;
+}
+#copyright-right a:hover{
+    opacity: 1;
 }
