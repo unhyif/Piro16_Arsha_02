@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
-/*삭제해야함. fix header 디버깅용*/
-body {
-    height: 1000rem;
-}
-
 /*제일 위 헤더*/
 /*헤더에도 스크롤이 생기는 문제... 는 아르샤는 헤더 아래에 html이 다시 시작해서 그런걸까 하는 짐작.*/
 #header {
