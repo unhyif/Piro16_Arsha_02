@@ -1,0 +1,274 @@
+/*삭제해야함. fix header 디버깅용*/
+body {
+    height: 1000rem;
+}
+
+/*제일 위 헤더*/
+#header {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    height: 6.5rem;
+    border-bottom: 0.1rem solid #ddd;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+/*헤더 로고*/
+.header-logo a {
+    color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    letter-spacing: -.08rem;
+    font-weight: 900;
+}
+
+.header-logo a strong span {
+    color: var(--sky-blue);
+}
+
+.header-logo a img {
+    height: 3rem;
+    margin-right: 0.6rem;
+}
+
+/*헤더 왼쪽 아이콘*/
+.header-preview ul {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 2rem;
+}
+
+.header-preview li a {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.header-preview li a i {
+    font-size: 1.7rem;
+}
+
+.header-preview li a.header-preview__highlight {
+    border-bottom: 0.2rem solid var(--sky-blue);
+    color: var(--sky-blue);
+}
+
+
+/*헤더 오른쪽*/
+.header-navigate ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigate ul li a {
+    padding: 0.5rem 1rem;
+    border: solid 0.1rem #dfdfdf;
+    border-radius: 0.4rem;
+    color: #828282;
+    display: inline-block;
+    text-align: center;
+}
+
+.header-navigate ul li a:not(.header-navigate__right-arrow) {
+    margin-right: 0.5rem;
+}
+
+.header-navigate ul li a.header-navigate__left {
+    width: 4.6rem;
+    height: 4rem;
+}
+
+.header-navigate__middle {
+    width: 16.2rem;
+    height: 4rem;
+    background: var(--sky-blue);
+}
+
+.header-navigate__middle i {
+    color: white;
+}
+
+.header-navigate__middle span {
+    font-size: 1.4rem;
+    padding-left: 0.7rem;
+    color: white;
+}
+
+.header-naviagte__arrow {
+    width: 5.8rem;
+    height: 4rem;
+}
+
+.header-navigate ul li i {
+    padding-top: 0.5rem;
+    font-size: 1.8rem;
+    vertical-align: text-bottom;
+}
+
+/*남색 헤더*/
+#s-header {
+    position: fixed;
+    top: 6.5rem;
+    right: 0;
+    left: 0;
+    padding: 1.5rem 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.s-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 132rem;
+    padding: 0 1.2rem;
+}
+
+
+.s-header-logo {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.s-header-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.s-header-nav ul li a {
+    padding: 1rem 0 1rem 3rem;
+    font-size: 1.5rem;
+}
+
+.s-header-nav ul li a i {
+    margin-left: 0.6rem;
+}
+
+#s-header-nav__home {
+    color: var(--sky-blue);
+}
+
+#s-header-nav__start {
+    padding: 0.8rem 2rem;
+    margin-left: 3rem;
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    border: 0.2rem solid var(--sky-blue);
+}
+
+/*첫 세션*/
+#hero {
+    background-color: var(--dark-blue);
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.hero-container {
+    padding: 7.2rem 1.2rem 0;
+    width: 132rem;
+}
+
+.hero-row {
+    display: flex;
+    align-items: center;
+}
+
+.hero-button-row {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.hero-button-row__button {
+    color: white;
+    border-radius: 5rem;
+    padding: 1rem 2.8rem 1.1rem 2.8rem;
+    background-color: #47b2e4;
+}
+
+.hero-button-row__watch {
+    display: flex;
+    align-items: center;
+    margin-left: 2.5rem;
+}
+
+.hero-button-row__watch span {
+    color: white;
+}
+
+.hero-button-row__watch i {
+    margin-right: 0.8rem;
+    font-size: 3.2rem;
+    color: white;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.6rem;
+    margin: 0 0 1rem;
+}
+
+.hero-text h2 {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 5rem;
+    font-size: 2.4rem;
+}
+
+.hero-img {
+    width: 50%;
+    height: auto;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#clients {
+    background-color: var(--light-blue);
+    overflow: hidden;
+    padding: 1.2rem 0;
+}
+
+.clients-container {
+    width: 132rem;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+.clients-container-row {
+    display: flex;
+    width: 132rem;
+}
+
+.clients-container-row__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16.66666667%;
+}
+
+.clients-container-row__icon img {
+    max-width: 45%;
+    /* transition: all 0.4s ease-in-out; */
+    display: inline-block;
+    padding: 1.5rem 0;
+}
