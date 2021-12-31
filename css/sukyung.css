@@ -140,7 +140,6 @@ body {
 
 /*남색 헤더*/
 #s-header {
-    background-color: rgba(40, 58, 90, 0.9);
     z-index: 97;
     position: fixed;
     top: 6.5rem;
@@ -152,11 +151,17 @@ body {
     display: flex;
     justify-content: center;
     transition: all 0.2s ease-in-out;
+    animation: opacityChange 0.4s ease-in-out forwards;
+    animation-delay: 1s;
 }
 
-#s-header: {
-    opacity: 0.5;
-    background-color: var(--dark-blue);
+@keyframes opacityChange {
+    from{
+
+    }
+    to{
+        background-color: rgba(40, 58, 90, 0.9);
+    }
 }
 
 .s-header-container {
@@ -282,13 +287,13 @@ body {
 /*첫 세션*/
 #hero {
     background-color: var(--dark-blue);
-    padding: 10.5rem 0 3.3rem 0;
+    padding: 10.5rem 0 5.5rem 0;
     overflow: hidden;
     width: 100%;
 }
 
 .hero-container {
-    padding: 5.2rem 1.2rem 0;
+    padding: 7.6rem 1.2rem 0;
     width: 132rem;
 }
 
@@ -311,7 +316,7 @@ body {
     font-family: "Jost", sans-serif;
     border-radius: 5rem;
     margin-top: 1rem;
-    padding: 1.4rem 2.8rem 1.5rem 2.8rem;
+    padding: 1.4rem 2.6rem 1.5rem 2.6rem;
     letter-spacing: 0.1rem;
     background-color: #47b2e4;
     transition: background-color 0.4s ease-in-out;
