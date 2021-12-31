@@ -1,0 +1,43 @@
+@import "jihyun/accordion-jh.css";
+@import "jihyun/card.css";
+@import "jihyun/animations.css";
+
+/* ======= Eun-Ipsam Section ======= */
+
+section#eun-ipsam {
+  background-color: var(--light-blue);
+  padding-top: 12.5rem;
+}
+.eun-ipsam__content {
+  display: flex;
+}
+
+/* eun-ipsam text-wrapper */
+
+.eup-ipsam__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 51.294rem;
+}
+.eun-ipsam__title {
+  color: var(--dark-blue);
+  font-family: "Jost", sans-serif;
+  font-size: var(--section__title-font-size);
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+.eun-ipsam__sub {
+  color: #848484;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+.eup-ipsam__img-wrapper {
+  width: 52.639rem;
+}
+img {
+  width: 100px;
+}
+
+/* End Eun-Ipsam Section */

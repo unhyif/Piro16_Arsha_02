@@ -1,0 +1,75 @@
+.accordion-jh__li {
+  background: white;
+  border-radius: 0.4rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+.accordion-jh__li:last-child {
+  margin-bottom: 0;
+}
+.accordion-jh__li input {
+  position: fixed;
+  left: -9999px;
+}
+
+/* When checkbox isn't checked */
+
+.accordion-jh__li label {
+  color: #343a40;
+  font-family: "Poppins";
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.accordion-jh__li label span:first-child {
+  color: var(--sky-blue);
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-right: 1.3rem;
+}
+.accordion-jh__li label span:last-child {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.accordion-jh__li label:hover {
+  color: var(--sky-blue);
+}
+.accordion-jh__li i {
+  font-size: 1.3rem;
+  position: absolute;
+  right: 0;
+  top: 0.2rem;
+}
+.accordion-jh__li .fa-chevron-up {
+  display: none;
+}
+.accordion-jh__pop {
+  padding-top: 1rem;
+  line-height: 1.5;
+  display: none;
+}
+
+/* When checkbox is checked */
+
+.accordion-jh__li input:checked ~ label {
+  color: var(--sky-blue);
+}
+.accordion-jh__li input:checked ~ label:hover {
+  color: #73c5eb;
+}
+.accordion-jh__li input:checked ~ label .fa-chevron-up {
+  display: block;
+}
+.accordion-jh__li input:checked ~ label .fa-chevron-down {
+  display: none;
+}
+#accordion-jh__check1:checked ~ #accordion-jh__pop1 {
+  display: block;
+}
+#accordion-jh__check2:checked ~ #accordion-jh__pop2 {
+  display: block;
+}
+#accordion-jh__check3:checked ~ #accordion-jh__pop3 {
+  display: block;
+}
