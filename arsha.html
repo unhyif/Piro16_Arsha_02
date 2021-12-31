@@ -46,7 +46,7 @@
         <a href="arsha.html">arsha</a>
       </h1>
       <nav class="s-header-nav">
-        <ul>
+        <ul id="s-header-nav-ul">
           <li>
             <a id="s-header-nav__home" href="#hero">Home</a>
           </li>
@@ -54,8 +54,19 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#">Drop Down<i class="fas fa-chevron-down"></i></a>
-            <!--dropbox자리 ul-->
+          <li id="s-header-nav__dropdown"><a href="#">Drop Down<i class="fas fa-chevron-down"></i></a>
+            <!--dropbox자리-->
+            <ul id="s-header-dropdown">
+              <li><a href="#">Drop Down1</a></li>
+              <li id="s-header-deep-dropdown"><a href="#"><span>Deep Drop Down</span>
+                  <i class="fas fa-chevron-right"></i></a>
+
+                <!--ㅎㅎ... deep dropdown 자리....-->
+              </li>
+              <li><a href="#">Drop Down2</a></li>
+              <li><a href="#">Drop Down3</a></li>
+              <li><a href="#">Drop Down4</a></li>
+            </ul>
           </li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#about" id="s-header-nav__start">Get Started</a></li>
