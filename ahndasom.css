@@ -27,18 +27,19 @@
 }
 
 .section__title h2::after{
-content: "";
-position: absolute;
-display: block;
-width: 40px;
-height: 3px;
-background: var(--skyblue-);
-bottom: 0;
-left: calc(50% - 20px);
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--sky-blue);
+    bottom: 0;
+    left: calc(50% - 20px);
 }
 
 #about-us {
-    padding: 60px 0;;
+    padding: 60px 0;
+    display: block;
 }
 
 #about-content{
@@ -59,6 +60,7 @@ left: calc(50% - 20px);
 
 .about-text{
     margin-bottom: 1rem;
+    line-height: 1.5;
 }
 
 #about-list {
