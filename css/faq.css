@@ -38,11 +38,12 @@
     height: 0;
     overflow: hidden;
     transition: all 0.3s;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 .faq-hiddenPara-btn{
     font-family: "Poppins", sans-serif;
+    color: var(--dark-blue);
 }
 
 .faq-hiddenPara-btn .fa-question-circle{
