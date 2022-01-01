@@ -1,5 +1,9 @@
 /* animations in Eup-Ipsam, Services Section */
 @keyframes upwards-jh {
+  from {
+    top: 6rem;
+    opacity: 0;
+  }
   to {
     top: 0;
     opacity: 1;
@@ -14,12 +18,20 @@
 
 /* animations in Skills Section */
 @keyframes toTheRight-jh {
+  from {
+    right: 6rem;
+    opacity: 0;
+  }
   to {
     right: 0;
     opacity: 1;
   }
 }
 @keyframes toTheLeft-jh {
+  from {
+    left: 6rem;
+    opacity: 0;
+  }
   to {
     left: 0;
     opacity: 1;
@@ -48,14 +60,11 @@
 
 /* animation in Services Section */
 @keyframes expand2-jh {
-  0.00001% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
+  from {
     transform: scale(0.5);
+    opacity: 0;
   }
-  100% {
+  to {
     transform: scale(1);
     opacity: 1;
   }

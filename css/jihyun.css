@@ -8,8 +8,10 @@ section#eun-ipsam {
   padding: 12rem 0 13.6rem 0;
 }
 .eun-ipsam__content {
+  width: 126.333rem;
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 
 .eup-ipsam__text-wrapper {
@@ -17,11 +19,8 @@ section#eun-ipsam {
   flex-direction: column;
   width: 73.694rem;
   padding: 0 11.2rem;
-  opacity: 0;
   position: relative;
-  top: 6rem;
-  animation: upwards-jh 1s ease-in-out forwards;
-  animation-delay: 1s;
+  animation: upwards-jh 1s ease-in-out;
 }
 .eun-ipsam__title {
   color: var(--dark-blue);
@@ -45,7 +44,7 @@ section#eun-ipsam {
   transform: scale(0.5);
   opacity: 0;
   animation: expand-jh 1s ease-in-out forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 .eup-ipsam__img-wrapper img {
   width: 100%;
@@ -66,10 +65,7 @@ section#skills {
 .skills__img-wrapper {
   padding: 0 1.2rem;
   position: relative;
-  right: 6rem;
-  opacity: 0;
-  animation: toTheRight-jh 1s ease-in-out forwards;
-  animation-delay: 2.5s;
+  animation: toTheRight-jh 1s ease-in-out;
 }
 .skills__img-wrapper img {
   width: 54.6rem;
@@ -79,10 +75,7 @@ section#skills {
   width: 57rem;
   padding: 0 1.2rem;
   position: relative;
-  left: 6rem;
-  opacity: 0;
-  animation: toTheLeft-jh 1s ease-in-out forwards;
-  animation-delay: 2.5s;
+  animation: toTheLeft-jh 1s ease-in-out;
 }
 .skills__title {
   color: var(--dark-blue);
@@ -123,19 +116,19 @@ section#skills {
 }
 .each-skill:first-child .percent {
   animation: progress1-jh 1s ease-in-out forwards;
-  animation-delay: 3.2s;
+  animation-delay: 1s;
 }
 .each-skill:nth-child(2) .percent {
   animation: progress2-jh 1s ease-in-out forwards;
-  animation-delay: 3.2s;
+  animation-delay: 1s;
 }
 .each-skill:nth-child(3) .percent {
   animation: progress3-jh 1s ease-in-out forwards;
-  animation-delay: 3.2s;
+  animation-delay: 1s;
 }
 .each-skill:last-child .percent {
   animation: progress4-jh 1s ease-in-out forwards;
-  animation-delay: 3.2s;
+  animation-delay: 1s;
 }
 /* End SKills Section */
 
@@ -148,14 +141,9 @@ section#services {
   width: 111.6rem;
   margin: 0 auto;
 }
-.section-title {
-  text-align: center;
-  padding-bottom: 3rem;
-  opacity: 0;
+.section-title-jh {
   position: relative;
-  top: 6rem;
-  animation: upwards-jh 1s ease-in-out forwards;
-  animation-delay: 4.2s;
+  animation: upwards-jh 1s ease-in-out;
 }
 .services__title {
   height: 5.84rem;
