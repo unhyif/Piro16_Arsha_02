@@ -6,7 +6,7 @@
 }
 
 #cta .container {
-  max-width: 1320px; /*이거 반응형 기준이라 좀 애매.. */
+  max-width: 1320px; /* problem..? */
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -15,7 +15,7 @@
 }
 
 #cta .row {
-  --bs-gutter-x: 1.5rem; /*이걸로 문장 길이조절 */
+  --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +25,7 @@
 }
 
 #cta .row > * {
-  /* flex-shrink: 0; 이게뭐지? */
+  /* flex-shrink: 0; */
   width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -54,27 +54,40 @@
   font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   display: inline-block;
-  padding: 12px 40px;
+  padding: 1.2rem 4rem;
   /* local optimization 12px - not localized */
-  border-radius: 50px;
-  transition: 1.5s;
-  /* local optimization */
-  margin: 10px;
-  border: 2px solid #fff;
+  border-radius: 5rem;
+  margin: 1rem;
+  border: 0.2rem solid #fff;
   color: #fff;
 }
 
 #cta .cta-btn:hover {
   background-color: #47b2e4;
-  border: 2px solid #47b2e4;
+  border: 0.2rem solid #47b2e4;
 }
 
 #cta .cta-btn-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+@keyframes startScale {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#cta .animation {
+  animation: startScale 1.5s ease-in-out;
 }
 
 #cta .col-lg-9 {
@@ -100,7 +113,7 @@
     url(https://bootstrapmade.com/demo/templates/Arsha/assets/img/cta-bg.jpg)
       fixed center center;
   background-size: cover;
-  padding: 120px 0;
+  padding: 12rem 0;
 }
 
 /* -------------team------------- */
@@ -108,7 +121,7 @@
 #team .center-align {
   margin: auto auto;
   width: auto;
-  padding: 60px 0;
+  padding: 6rem 0;
   overflow: hidden;
 }
 
@@ -122,15 +135,15 @@
 }
 
 section #team {
-  padding: 60px 0;
+  padding: 6rem 0;
   overflow: hidden;
 }
 
 #team .member {
   position: relative;
-  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
-  padding: 30px;
-  border-radius: 5px;
+  box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 10%);
+  padding: 3rem;
+  border-radius: 0.5rem;
   background: #fff;
   transition: 0.5s;
 }
@@ -145,7 +158,7 @@ section #team {
 
 #team .member .pic {
   overflow: hidden;
-  width: 180px;
+  width: 18rem;
   border-radius: 50%;
 }
 
@@ -189,16 +202,16 @@ svg {
 
 #team .member h4 {
   font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
   color: #37517e;
   font-family: "Jost", sans-serif;
 }
 
 #team .member span {
   display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
   position: relative;
   font-weight: 500;
 }
@@ -221,14 +234,14 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
-  width: 32px;
-  height: 32px;
+  border-radius: 5rem;
+  width: 3.2rem;
+  height: 3.2rem;
   background: #eff2f8;
 }
 
 #team .member .social {
-  margin-top: 12px;
+  margin-top: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -236,12 +249,12 @@ svg {
 
 #team .member .social a i {
   color: #37517e;
-  font-size: 16px;
-  margin: 0 2px;
+  font-size: 1.6rem;
+  margin: 0 0.2rem;
 }
 
 #team .member .social a + a {
-  margin-left: 8px;
+  margin-left: 0.8rem;
 }
 
 #team .member .social a:hover {
@@ -254,29 +267,57 @@ svg {
 
 /* ----------------- */
 
-#team .member span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #cbd6e9;
-  bottom: 0;
-  left: 0;
+#team .member .member-info {
+  padding-left: 3rem;
+  line-height: 1.2;
 }
 
-#team .member .member-info {
-  padding-left: 30px;
-  line-height: 1.2;
+@keyframes startTranslate {
+  from {
+    transform: translateY(4.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(1);
+    opacity: 1;
+  }
 }
 
 #team .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
+}
+
+#team .animation {
+  animation: startTranslate 1s ease-in-out;
+}
+
+@keyframes Scale1 {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#team .animation1 {
+  animation: Scale1 1s ease-in-out;
+}
+#team .animation2 {
+  animation: Scale1 1.2s ease-in-out;
+}
+#team .animation3 {
+  animation: Scale1 1.4s ease-in-out;
+}
+#team .animation4 {
+  animation: Scale1 1.8s ease-in-out;
 }
 
 #team .section-title h2 {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 2rem;
@@ -298,7 +339,7 @@ svg {
 }
 
 #team center-align {
-  padding: 60px 0;
+  padding: 6rem 0;
   overflow: hidden;
 }
 
@@ -319,6 +360,31 @@ svg {
 
 /* -------------pricing------------- */
 
+#pricing .animation {
+  animation: startTranslate 1s ease-in-out;
+}
+
+@keyframes startTranslateFar {
+  from {
+    transform: translateY(9rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(1);
+    opacity: 1;
+  }
+}
+
+#pricing .animation1 {
+  animation: startTranslateFar 1s ease-in-out;
+}
+#pricing .animation2 {
+  animation: startTranslateFar 1.2s ease-in-out;
+}
+#pricing .animation3 {
+  animation: startTranslateFar 1.4s ease-in-out;
+}
+
 #pricing .container {
   max-width: 1320px;
   width: 100%;
@@ -330,22 +396,26 @@ svg {
 
 #pricing .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
 }
 
 #pricing .center-align {
   margin: auto auto;
   width: auto;
-  padding: 60px 0;
+  padding: 6rem 0;
   overflow: hidden;
 }
 
+#pricing .animation {
+  animation: startTranslate 1s ease-in-out;
+}
+
 #pricing .section-title h2 {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   position: relative;
   color: #37517e;
   font-family: "Jost", sans-serif;
@@ -359,7 +429,7 @@ svg {
 }
 
 #pricing .row {
-  padding-top: 40px;
+  padding-top: 4rem;
   --bs-gutter-x: 2.5rem;
   /* local optimization */
   --bs-gutter-y: 0;
@@ -384,18 +454,18 @@ svg {
 }
 
 #pricing .box {
-  padding: 60px 40px;
+  padding: 6rem 4rem;
   box-shadow: 0 3px 20px -2px rgb(20 45 100 / 10%);
   background: #fff;
   height: 100%;
-  border-top: 4px solid #fff;
-  border-radius: 5px;
+  border-top: 0.4rem solid #fff;
+  border-radius: 0.5rem;
 }
 
 #pricing h3 {
   font-weight: 500;
-  margin-bottom: 15px;
-  font-size: 20px;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
   color: #37517e;
   font-family: "Jost", sans-serif;
   margin-top: 0;
@@ -403,15 +473,15 @@ svg {
 }
 
 #pricing h4 {
-  font-size: 48px;
+  font-size: 4.8rem;
   color: #37517e;
   font-weight: 400;
   font-family: "Jost", sans-serif;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 
 #pricing h4 sup {
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 
 #pricing sup {
@@ -423,32 +493,32 @@ svg {
 
 #pricing h4 span {
   color: #47b2e4;
-  font-size: 18px;
+  font-size: 1.8rem;
   display: block;
 }
 
 #pricing ul {
-  padding: 20px 0;
+  padding: 2rem 0;
   list-style: none;
   color: #999;
   text-align: left;
-  line-height: 20px;
+  line-height: 2rem;
   margin-top: 0;
   margin-bottom: 1rem;
   margin-bottom: 1.6rem;
 }
 
 #pricing ul li {
-  padding: 10px 0 10px 30px;
+  padding: 1rem 0 1rem 3rem;
   position: relative;
 }
 
 #pricing ul i {
   color: #28a745;
-  font-size: 24px;
+  font-size: 2.4rem;
   position: absolute;
   left: 0;
-  top: 6px;
+  top: 0.6rem;
 }
 
 #pricing .bx {
@@ -460,14 +530,11 @@ svg {
   text-rendering: auto;
   display: inline-block;
   text-transform: none;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-#pricing .bx-check:before {
+/* #pricing .bx-check:before {
   box-sizing: border-box;
-}
+} */
 
 #pricing ul .na i {
   color: #ccc;
@@ -483,20 +550,20 @@ svg {
 
 #pricing .buy-btn {
   display: inline-block;
-  padding: 12px 35px;
-  border-radius: 50px;
+  padding: 1.2rem 3.5rem;
+  border-radius: 5rem;
   color: #47b2e4;
   transition: none;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
   font-family: "Jost", sans-serif;
   transition: 0.3s;
-  border: 1px solid #47b2e4;
+  border: 0.1rem solid #47b2e4;
 }
 
 #pricing .buy-btn:hover {
   background-color: #47b2e4;
-  border: 1px solid #47b2e4;
+  border: 0.1rem solid #47b2e4;
   color: white;
 }
 
