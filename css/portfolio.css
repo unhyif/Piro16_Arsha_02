@@ -112,14 +112,16 @@
     margin-bottom: 0;
 }
 
-.portfolio-img:hover,
-.portfolio-info:hover + .portfolio-img{ 
+/* .portfolio-img:hover, .portfolio-info:hover ~ .portfolio-img { 
+    transform: scale(1.2,1.2);
+} */
+
+.portfolio-img-wrapper:hover .portfolio-img{
     transform: scale(1.2,1.2);
 }
 
 .portfolio-img:hover + .portfolio-info, .portfolio-info:hover{
-    opacity :1;
-    
+    opacity: 1;
 }
 
 .portfolio-Icon{
