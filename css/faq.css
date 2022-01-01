@@ -50,7 +50,7 @@
 }
 
 
-.fa-chevron-up, .fa-chevron-down{
+.fa-chevron-up, [id*="faq-open-accordion"] .fa-chevron-down{
     position: absolute;
     top: 3rem;
     right: 3rem;
