@@ -43,8 +43,12 @@
     position: relative;
     font-family: "Poppins", sans-serif;
     color: var(--dark-blue);
-    padding: 2rem;
+    padding: 2rem ;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
+
 
 .fa-chevron-up, .fa-chevron-down{
     position: absolute;
@@ -72,17 +76,17 @@
     -moz-transition: all 0.1s ease;
 }
 .faq-accordion-content p{
-    padding: 2rem;
+    padding: 0 2rem 2rem;
 }
 
 .faq-accordion span:target ~ .faq-accordion-content {
     display: block;
-    height: 10rem;
+    height: 7rem;
 }
 
 .faq-accordion #faq-accordion1:target ~ .faq-accordion-content {
     display: block;
-    height: 8rem;
+    height: 6rem;
 }
 
 .faq-accordion span:target ~ [id*="faq-close-accordion"] {
@@ -96,4 +100,21 @@
 
 [id*="faq-open-accordion"]:hover{
     color: var(--sky-blue);
+}
+[id*="faqq-close-accordion"] {
+    display: flex;
+}
+
+[id*="faq-close-accordion"]:hover > p{
+    opacity: 0.7;
+}
+[id*="faq-close-accordion"] p{
+    display: inline-block;
+}
+
+.fa-question-circle{
+    display: inline-block;
+    color: var(--sky-blue);
+    opacity: 1;
+    margin: 1rem;
 }
