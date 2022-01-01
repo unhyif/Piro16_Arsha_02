@@ -14,101 +14,6 @@
     animation: upward-animation 1.5s 0.5s 1;
 }
 
-.faq-hiddenPara{
-    display:none;
-    transition: all 0.3s ease-in-out;
-}
-
-.faq-hiddenPara-btn .faq-icon .fa-chevron-up{
-    display: none;
-}
-
-.faq-hiddenPara-btn:hover{
-    color: var(--sky-blue);
-}
-
-
-#first-btn:checked ~ .faq-hiddenPara-btn{
-    color: var(--sky-blue);
-}
-#second-btn:checked ~ .faq-hiddenPara-btn{
-    color: var(--sky-blue);
-}
-#third-btn:checked ~ .faq-hiddenPara-btn{
-    color: var(--sky-blue);
-}
-#fourth-btn:checked ~ .faq-hiddenPara-btn{
-    color: var(--sky-blue);
-}
-#fifth-btn:checked ~ .faq-hiddenPara-btn{
-    color: var(--sky-blue);
-}
-
-.faq-hiddenPara-btn ~ .faq-hiddenPara{
-    transition: all 0.3s ease-in-out;
-}
-
-#first-btn:checked ~ .faq-hiddenPara{
-    display: block;
-    width: 100%;
-    height:auto;
-}
-#second-btn:checked ~ .faq-hiddenPara{
-    display: block;
-    width: 100%;
-    height:auto;
-}
-#third-btn:checked ~ .faq-hiddenPara{
-    display: block;
-    width: 100%;
-    height:auto;
-}
-#fourth-btn:checked ~ .faq-hiddenPara{
-    display: block;
-    width: 100%;
-    height:auto;
-}
-#fifth-btn:checked ~ .faq-hiddenPara{
-    display: block;
-    width: 100%;
-    height:auto;
-}
-
-#first-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
-    display: block;
-}
-#first-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
-    display: none;
-}
-
-#second-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
-    display: block;
-}
-#second-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
-    display: none;
-}
-
-#third-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
-    display: block;
-}
-#third-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
-    display: none;
-}
-
-#fourth-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
-    display: block;
-}
-#fourth-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
-    display: none;
-}
-
-#fifth-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
-    display: block;
-}
-#fifth-btn:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
-    display: none;
-}
-
 /* faq design */
 .faq-main{
     font-size: 16px;
@@ -120,6 +25,7 @@
     background: white;
     padding: 20px;
     margin-bottom: 10px;
+    vertical-align: middle;
 }
 
 .faq-icon i{
@@ -129,6 +35,44 @@
 }
 
 .faq-hiddenPara{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    transition-duration: 1s;
+}
+
+
+/* 기능 */
+.faq-hiddenPara-btn .faq-icon .fa-chevron-up{
+    display: none;
+}
+/* hover 색변화 */
+.faq-hiddenPara-btn:hover{
+    color: var(--sky-blue);
+}
+
+/* checked 색변화 */
+.faq-hidden-li input:checked ~ .faq-hiddenPara-btn{
+    color: var(--sky-blue);
+}
+
+/* checked menu open */
+.faq-hidden-li input:checked ~ .faq-hiddenPara{
     padding-top: 15px;
-    height: auto;
+
+    height: 5rem;
+}
+#second-btn:checked ~ .faq-hiddenPara{
+    height: 6.5rem;
+}
+#third-btn:checked ~ .faq-hiddenPara{
+    height: 6.5rem;
+}
+
+/* checked change icon */
+.faq-hidden-li input:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
+    display: block;
+}
+.faq-hidden-li input:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
+    display: none;
 }
