@@ -160,6 +160,8 @@
     margin-left: calc(-.5 * var(--bs-gutter-x));
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
+    width: 108rem;
 }
 
 #news-content {

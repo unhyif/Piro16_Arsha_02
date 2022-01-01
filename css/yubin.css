@@ -567,6 +567,26 @@ svg {
   color: white;
 }
 
+#pricing .buy-btn-start {
+  display: inline-block;
+  padding: 1.2rem 3.5rem;
+  border-radius: 5rem;
+  background-color: #47b2e4;
+  color: white;
+  transition: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  transition: 0.3s;
+  border: 0.1rem solid #47b2e4;
+}
+
+#pricing .buy-btn-start:hover {
+  background-color: #209dd8;
+  border: 0.1rem solid #209dd8;
+  color: white;
+}
+
 #pricing .featured .buy-btn {
   background: #47b2e4;
   color: #fff;

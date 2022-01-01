@@ -6,6 +6,9 @@
     animation: upward-animation 1.5s 0s 1;
 }
 
+.section-title p{
+    line-height: 1.5;
+}
 
 #portfolio-main{
     padding: 6rem 0;
