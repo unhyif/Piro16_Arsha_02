@@ -1,7 +1,7 @@
 /* FAQ -기능*/
 #faq{
     background: var(--light-blue);
-    padding: 60px 0;
+    padding: 6rem 0;
 }
 
 #faq-title{
@@ -16,22 +16,22 @@
 
 /* faq design */
 .faq-main{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
 .faq-hidden li{
     position: relative;
     background: white;
-    padding: 20px;
-    margin-bottom: 10px;
+    padding: 2rem;
+    margin-bottom: 1rem;
     vertical-align: middle;
 }
 
 .faq-icon i{
     position: absolute;
-    right: 25px;
-    top: 22px;
+    right: 2.5rem;
+    top: 2.2rem;
 }
 
 .faq-hiddenPara{
@@ -58,7 +58,7 @@
 
 /* checked menu open */
 .faq-hidden-li input:checked ~ .faq-hiddenPara{
-    padding-top: 15px;
+    padding-top: 1.5rem;
 
     height: 5rem;
 }
