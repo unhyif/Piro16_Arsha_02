@@ -135,7 +135,7 @@
 }
 
 #news-container {
-    /* text-align: center; */
+    text-align: center;
     /* width: inherit; */
 
     --bs-gutter-x: 1.5rem;
@@ -145,6 +145,8 @@
     margin-left: auto;
 
 }
+
+
 
 #news-container.center-align {
     justify-content: center !important;
@@ -163,8 +165,10 @@
 }
 
 #news-content {
+    flex: 0 0 auto;
     width: 50%;
-
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
 }
 
 #news-text {
