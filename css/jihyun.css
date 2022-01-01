@@ -8,6 +8,7 @@ section#eun-ipsam {
   padding: 12rem 0 13.6rem 0;
 }
 .eun-ipsam__content {
+  width: 126.333rem;
   display: flex;
   align-items: center;
   margin: 0 auto;
