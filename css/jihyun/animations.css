@@ -1,0 +1,71 @@
+/* animations in Eup-Ipsam, Services Section */
+@keyframes upwards-jh {
+  from {
+    top: 6rem;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes expand-jh {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* animations in Skills Section */
+@keyframes toTheRight-jh {
+  from {
+    right: 6rem;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes toTheLeft-jh {
+  from {
+    left: 6rem;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes progress1-jh {
+  to {
+    width: 100%;
+  }
+}
+@keyframes progress2-jh {
+  to {
+    width: 90%;
+  }
+}
+@keyframes progress3-jh {
+  to {
+    width: 75%;
+  }
+}
+@keyframes progress4-jh {
+  to {
+    width: 55%;
+  }
+}
+
+/* animation in Services Section */
+@keyframes expand2-jh {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

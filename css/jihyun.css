@@ -1,0 +1,158 @@
+@import "jihyun/accordion-jh.css";
+@import "jihyun/card.css";
+@import "jihyun/animations.css";
+
+/* ======= Eun-Ipsam Section ======= */
+section#eun-ipsam {
+  background-color: var(--light-blue);
+  padding: 12rem 0 13.6rem 0;
+}
+.eun-ipsam__content {
+  width: 126.333rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.eup-ipsam__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 73.694rem;
+  padding: 0 11.2rem;
+  position: relative;
+  animation: upwards-jh 1s ease-in-out;
+}
+.eun-ipsam__title {
+  color: var(--dark-blue);
+  font-family: "Jost", sans-serif;
+  font-size: 3.4rem;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+.eun-ipsam__sub {
+  color: #848484;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+.eup-ipsam__img-wrapper {
+  width: 52.639rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: scale(0.5);
+  opacity: 0;
+  animation: expand-jh 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.eup-ipsam__img-wrapper img {
+  width: 100%;
+}
+/* End Eun-Ipsam Section */
+
+/* ======= Skills Section ======= */
+section#skills {
+  padding: 6rem 0;
+}
+.skills__content {
+  width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.skills__img-wrapper {
+  padding: 0 1.2rem;
+  position: relative;
+  animation: toTheRight-jh 1s ease-in-out;
+}
+.skills__img-wrapper img {
+  width: 54.6rem;
+}
+
+.skills__text-wrapper {
+  width: 57rem;
+  padding: 0 1.2rem;
+  position: relative;
+  animation: toTheLeft-jh 1s ease-in-out;
+}
+.skills__title {
+  color: var(--dark-blue);
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+.skills__sub {
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+.each-skill {
+  margin-bottom: 2.6rem;
+}
+.skill__title {
+  display: flex;
+  justify-content: space-between;
+  color: var(--dark-blue);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.progress-bar {
+  background: #e8edf5;
+  height: 1rem;
+}
+.percent {
+  background: #4668a2;
+  height: 1rem;
+  width: 0;
+}
+.each-skill:first-child .percent {
+  animation: progress1-jh 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.each-skill:nth-child(2) .percent {
+  animation: progress2-jh 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.each-skill:nth-child(3) .percent {
+  animation: progress3-jh 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.each-skill:last-child .percent {
+  animation: progress4-jh 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+/* End SKills Section */
+
+/* ======= Services Section ======= */
+section#services {
+  background-color: var(--light-blue);
+  padding: 6rem 0;
+}
+.services__center-align {
+  width: 111.6rem;
+  margin: 0 auto;
+}
+.section-title-jh {
+  position: relative;
+  animation: upwards-jh 1s ease-in-out;
+}
+.services__title {
+  height: 5.84rem;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.services__sub {
+  line-height: 1.5;
+}
+/* End Services Section */

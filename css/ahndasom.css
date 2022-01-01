@@ -135,7 +135,6 @@
 }
 
 #news-container {
-    text-align: center;
     /* width: inherit; */
 
     --bs-gutter-x: 1.5rem;
@@ -162,6 +161,8 @@
     margin-left: calc(-.5 * var(--bs-gutter-x));
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
+    width: 108rem;
 }
 
 #news-content {

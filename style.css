@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import "css/reset.css";
 @import "css/variables.css";
+@import "css/yongbin.css";
+@import "css/yubin.css";
+@import "css/sukyung.css";
+@import "css/jihyun.css";
 @import "css/ahndasom.css";
 
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
@@ -15,7 +20,7 @@ body {
 
 .center-align {
   margin: 0 auto;
-  width: 1080px;
+  width: 108rem;
 }
 .blind {
   position: absolute;
@@ -30,4 +35,44 @@ body {
   font-family: "Jost", sans-serif;
   font-size: var(--section__title-font-size);
   font-weight: bold;
+}
+
+/* section title */
+.section-title{
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.section-title h2{
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  color: var(--dark-blue);
+  font-family: "Jost", sans-serif;
+}
+
+.section-title h2::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12rem;
+  height: 0.1rem;
+  background: #ddd;
+  bottom: 0.1rem;
+  left: calc(50% - 6rem);
+
+}
+
+.section-title h2::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 4rem;
+  height: 0.3rem;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 2rem);
 }
