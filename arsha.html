@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arsha Bootstrap Template Demo</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/70e0dc75f1.js" crossorigin="anonymous"></script>
+
+  <!-- SNS 아이콘으로 인해 아래 코드 추가함. -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -135,47 +138,979 @@
       </div>
     </section>
     <section id="about-us">
-      <div class="center-align"></div>
+      <div class="center-align">
+        <div class="section__title">
+          <h2 id="about">
+            ABOUT US
+          </h2>
+          <!--파란색 회색-->
+        </div>
+
+        <div id="about-content">
+
+          <div id="about-left">
+
+            <div class="about-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <div>
+              <ul id="about-list">
+                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit</li>
+                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="about-right">
+            <div class="about-text">
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+            </div>
+
+            <a id="about-learnmore-btn" href="https://bootstrapmade.com/demo/templates/Arsha/#">Learn More</a>
+          </div>
+
+        </div>
+
+      </div>
     </section>
     <section id="eun-ipsam">
-      <div class="center-align"></div>
+      <div class="eun-ipsam__center-align">
+        <div class="eun-ipsam__content">
+          <!-- eup-ipsam__text-wrapper -->
+          <div class="eup-ipsam__text-wrapper">
+            <h3 class="eun-ipsam__title">
+              Eum ipsam laborum deleniti
+              <strong style="font-weight: bold">velit pariatur architecto aut nihil</strong>
+            </h3>
+            <p class="eun-ipsam__sub">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+              aute irure dolor in reprehenderit
+            </p>
+            <!-- accordion -->
+            <ul class="accordion-jh">
+              <li class="accordion-jh__li">
+                <input type="checkbox" id="accordion-jh__check1" />
+                <label for="accordion-jh__check1" onclick="">
+                  <div>
+                    <span>01</span><span>Non consectetur a erat nam at lectus urna duis?</span>
+                  </div>
+                  <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i>
+                </label>
+                <p class="accordion-jh__pop" id="accordion-jh__pop1">
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                  volutpat lacus laoreet non curabitur gravida. Venenatis
+                  lectus magna fringilla urna porttitor rhoncus dolor purus
+                  non.
+                </p>
+              </li>
+              <li class="accordion-jh__li">
+                <input type="checkbox" id="accordion-jh__check2" />
+                <label for="accordion-jh__check2" onclick="">
+                  <div>
+                    <span>02</span><span>Feugiat scelerisque varius morbi enim nunc?</span>
+                  </div>
+                  <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i>
+                </label>
+                <p class="accordion-jh__pop" id="accordion-jh__pop2">
+                  Dolor sit amet consectetur adipiscing elit pellentesque
+                  habitant morbi. Id interdum velit laoreet id donec ultrices.
+                  Fringilla phasellus faucibus scelerisque eleifend donec
+                  pretium. Est pellentesque elit ullamcorper dignissim. Mauris
+                  ultrices eros in cursus turpis massa tincidunt dui.
+                </p>
+              </li>
+              <li class="accordion-jh__li">
+                <input type="checkbox" id="accordion-jh__check3" />
+                <label for="accordion-jh__check3" onclick="">
+                  <div>
+                    <span>03</span><span>Dolor sit amet consectetur adipiscing elit?</span>
+                  </div>
+                  <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i>
+                </label>
+                <p class="accordion-jh__pop" id="accordion-jh__pop3">
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                  sagittis orci. Faucibus pulvinar elementum integer enim. Sem
+                  nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
+                  pellentesque eu tincidunt. Lectus urna duis convallis
+                  convallis tellus. Urna molestie at elementum eu facilisis
+                  sed odio morbi quis
+                </p>
+              </li>
+            </ul>
+            <!-- end accordion -->
+          </div>
+          <!-- end eup-ipsam__text-wrapper -->
+
+          <!-- eup-ipsam__img-wrapper -->
+          <div class="eup-ipsam__img-wrapper">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/why-us.png" alt="why us" />
+          </div>
+          <!-- end eup-ipsam__img-wrapper -->
+        </div>
+      </div>
     </section>
     <section id="skills">
-      <div class="center-align"></div>
+      <div class="skills__content">
+        <!-- skills__img-wrapper -->
+        <div class="skills__img-wrapper">
+          <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/skills.png" alt="skills" />
+        </div>
+        <!-- end skills__img-wrapper -->
+
+        <!-- skills__text-wrapper -->
+        <div class="skills__text-wrapper">
+          <h3 class="skills__title">
+            Voluptatem dignissimos provident quasi corporis voluptates
+          </h3>
+          <p class="skills__sub">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ul class="skills__progress">
+            <li class="each-skill">
+              <div class="skill__title">
+                <span>html</span><span>100%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="percent"></div>
+              </div>
+            </li>
+            <li class="each-skill">
+              <div class="skill__title"><span>css</span><span>90%</span></div>
+              <div class="progress-bar">
+                <div class="percent"></div>
+              </div>
+            </li>
+            <li class="each-skill">
+              <div class="skill__title">
+                <span>javascript</span><span>75%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="percent"></div>
+              </div>
+            </li>
+            <li class="each-skill">
+              <div class="skill__title">
+                <span>photoshop</span><span>55%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="percent"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end skills__text-wrapper -->
+      </div>
     </section>
     <section id="services">
-      <div class="center-align"></div>
+      <div class="services__center-align">
+        <div class="section-title section-title-jh">
+          <h2 class="services__title section__title">services</h2>
+          <p class="services__sub">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+            ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+            quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+            Quia fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+        <!-- cards -->
+        <div class="cards">
+          <div class="card">
+            <i class="bx bxl-dribbble"></i>
+            <h4><a href="">Lorem Ipsum</a></h4>
+            <p>
+              Voluptatum deleniti atque corrupti quos dolores et quas
+              molestias excepturi
+            </p>
+          </div>
+          <div class="card">
+            <i class="bx bx-file"></i>
+            <h4><a href="">Sed ut perspici</a></h4>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore
+            </p>
+          </div>
+          <div class="card">
+            <i class="bx bx-tachometer"></i>
+            <h4><a href="">Magni Dolores</a></h4>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia
+            </p>
+          </div>
+          <div class="card">
+            <i class="bx bxl-dribbble"></i>
+            <h4><a href="">Nemo Enim</a></h4>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis
+            </p>
+          </div>
+        </div>
+        <!-- end cards -->
+      </div>
+      </div>
     </section>
     <section id="cta">
-      <div class="center-align"></div>
+      <div class="center-align">
+        <!--최종 끝 -->
+        <div class="container aos-init animation">
+          <!--애니메이션-->
+          <div class="row">
+            <!--flex 적용-->
+            <div class="animation col-lg-9 text-lg-start">
+              <h3>Call To Action</h3>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+              </p>
+            </div>
+            <div class="animation col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn" href="#">Call To Action</a>
+            </div>
+          </div>
+        </div>
+        <!--위  centeralign problem.. -->
+      </div>
     </section>
     <section id="portfolio">
-      <div class="center-align"></div>
+      <div id="portfolio-main" class="center-align">
+        <div class="section-title" id="portfolio-title">
+          <h2>
+            PORTFOLIO
+          </h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.
+          </p>
+          <ul id="portfolio-category">
+            <li class="portfolio-category-active">All</li>
+            <li>App</li>
+            <li>Card</li>
+            <li>Web</li>
+          </ul>
+        </div>
+
+        <div id="portfolio-container">
+          <!-- first column -->
+          <div class="portfolio-col">
+            <div class="portfolio-item" id="portfolio-1-1">
+              <div class="portfolio-img-wrapper">
+                <span class="blind">
+                  1번 사진
+                </span>
+                <img class="portfolio-img" src="./portfolio-img/portfolio-1.jpg" alt="1번 사진">
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <div class="portfolio-Icon">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-link"></i>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item" id="portfolio-1-2">
+              <div class="portfolio-img-wrapper">
+                <span class="blind">
+                  6번 사진
+                </span>
+                <img class="portfolio-img" src="./portfolio-img/portfolio-6.jpg" alt="6번 사진">
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>App</p>
+                  <div class="portfolio-Icon">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- second column -->
+          <div class="portfolio-col">
+            <div class="portfolio-item" id="portfolio-2-1">
+              <div class="portfolio-img-wrapper">
+
+                <span class="blind">
+                  2번 사진
+                </span>
+
+                <img class="portfolio-img" src="./portfolio-img/portfolio-2.jpg" alt="2번 사진">
+
+                <div class="portfolio-info">
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio-Icon">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item" id="portfolio-2-2">
+              <div class="portfolio-img-wrapper">
+
+                <span class="blind">
+                  5번 사진
+                </span>
+
+                <img class="portfolio-img" src="./portfolio-img/portfolio-5.jpg" alt="5번 사진">
+
+                <div class="portfolio-info">
+                  <h4>Web 2</h4>
+                  <p>Web</p>
+                  <div class="portfolio-Icon">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item" id="portfolio-2-3">
+              <div class="portfolio-img-wrapper">
+
+                <span class="blind">
+                  9번 사진
+                </span>
+
+                <img class="portfolio-img" src="./portfolio-img/portfolio-9.jpg" alt="9번 사진">
+
+                <div class="portfolio-info">
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio-Icon">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- third column -->
+          <div class="portfolio-col">
+            <div class="portfolio-item" id="portfolio-3-1">
+              <div class="portfolio-img-wrapper">
+
+                <span class="blind">
+                  3번 사진
+                </span>
+
+                <img class="portfolio-img" src="./portfolio-img/portfolio-3.jpg" alt="3번 사진">
+
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>App</p>
+                  <div class="portfolio-Icon">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item" id="portfolio-3-2">
+              <div class="portfolio-img-wrapper">
+                <span class="blind">
+                  4번 사진
+                </span>
+
+
+                <img class="portfolio-img" src="./portfolio-img/portfolio-4.jpg" alt="4번 사진">
+
+                <div class="portfolio-info">
+                  <h4>Card 2</h4>
+                  <p>Card</p>
+                  <div class="portfolio-Icon">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item" id="portfolio-3-3">
+              <div class="portfolio-img-wrapper">
+
+                <span class="blind">
+                  7번 사진
+                </span>
+
+                <img class="portfolio-img" src="./portfolio-img/portfolio-7.jpg" alt="7번 사진" />
+
+                <div class="portfolio-info">
+                  <h4>Card 1</h4>
+                  <p>Card</p>
+                  <div class="portfolio-Icon">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item" id="portfolio-3-4">
+              <div class="portfolio-img-wrapper">
+
+                <span class="blind">
+                  8번 사진
+                </span>
+
+                <img class="portfolio-img" src="./portfolio-img/portfolio-8.jpg" alt="8번 사진">
+
+                <div class="portfolio-info">
+                  <h4>Card 3</h4>
+                  <p>Card</p>
+                  <div class="portfolio-Icon">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-link"></i>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
     </section>
     <section id="team">
-      <div class="center-align"></div>
+      <div class="center-align">
+        <div class="container aos-init">
+          <div class="section-title animation">
+            <h2>
+              Team
+            </h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+              consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+              sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="member d-flex align-items-start aos-init animation1">
+                <div class="pic"><img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div class="member d-flex align-items-start aos-init animation2">
+                <div class="pic"><img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-2.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+              <div class="member d-flex align-items-start aos-init animation3">
+                <div class="pic"><img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-3.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+              <div class="member d-flex align-items-start aos-init animation4">
+                <div class="pic"><img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-4.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="pricing">
-      <div class="center-align"></div>
+      <div class="center-align">
+        <div class="container aos-init">
+          <div class="section-title animation">
+            <h2>Pricing</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+              consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+              sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 aos-init animation1">
+              <div class="box">
+                <h3>Free Plan</h3>
+                <h4><sup>$</sup>0<span>per month</span></h4>
+                <ul>
+                  <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                  <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                  <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                  <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                </ul>
+                <a href="#" class="buy-btn">Get Started</a>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0 aos-init animation2">
+              <div class="box featured">
+                <h3>Business Plan</h3>
+                <h4><sup>$</sup>29<span>per month</span></h4>
+                <ul>
+                  <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                  <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                  <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                  <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                  <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+                </ul>
+                <a href="#" class="buy-btn">Get Started</a>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0 aos-init animation3">
+              <div class="box">
+                <h3>Developer Plan</h3>
+                <h4><sup>$</sup>49<span>per month</span></h4>
+                <ul>
+                  <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                  <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                  <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                  <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                  <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+                </ul>
+                <a href="#" class="buy-btn">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="faq">
-      <div class="center-align"></div>
+      <div class="center-align">
+        <div class="section-title" id="faq-title">
+          <h2>
+            Frequently asked questions
+          </h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+        <div class="faq-main">
+          <ul class="faq-hidden">
+            <li class="faq-hidden-li">
+              <input name="para" type="radio" id="first-btn" />
+              <label for="first-btn" class="faq-hiddenPara-btn" onclick="">
+                <i class="far fa-question-circle"></i>
+                Non consectetur a erat nam at lectus urna duis?
+                <div class="faq-icon">
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-chevron-up"></i>
+
+                </div>
+              </label>
+              <p class="faq-hiddenPara">
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </li>
+
+            <li class="faq-hidden-li">
+              <input name="para" type="radio" id="second-btn" />
+              <label for="second-btn" class="faq-hiddenPara-btn" onclick="">
+                <i class="far fa-question-circle"></i>
+                Feugiat scelerisque varius morbi enim nunc?
+                <div class="faq-icon">
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-chevron-up"></i>
+
+                </div>
+              </label>
+              <p class="faq-hiddenPara">
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+                ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+
+            </li>
+
+            <li class="faq-hidden-li">
+              <input name="para" type="radio" id="third-btn" />
+              <label for="third-btn" class="faq-hiddenPara-btn" onclick="">
+                <i class="far fa-question-circle"></i>
+                Dolor sit amet consectetur adipiscing elit?
+                <div class="faq-icon">
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-chevron-up"></i>
+
+                </div>
+              </label>
+              <p class="faq-hiddenPara">
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
+                integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
+                Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+
+            </li>
+
+            <li class="faq-hidden-li">
+              <input name="para" type="radio" id="fourth-btn" />
+              <label for="fourth-btn" class="faq-hiddenPara-btn" onclick="">
+                <i class="far fa-question-circle"></i>
+                Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                <div class="faq-icon">
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-chevron-up"></i>
+
+                </div>
+              </label>
+              <p class="faq-hiddenPara">
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc
+                vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus
+                gravida quis blandit turpis cursus in.
+              </p>
+
+            </li>
+            <li class="faq-hidden-li">
+              <input name="para" type="radio" id="fifth-btn" />
+              <label for="fifth-btn" class="faq-hiddenPara-btn" onclick="">
+                <i class="far fa-question-circle"></i>
+                Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?
+                <div class="faq-icon">
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-chevron-up"></i>
+
+                </div>
+              </label>
+              <p class="faq-hiddenPara">
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada
+                nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis
+                tellus in metus vulputate eu scelerisque.
+              </p>
+
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
     </section>
     <section id="contact">
-      <div class="center-align"></div>
+      <div class="center-align">
+        <div class="section-title" id="contact-title">
+          <h2>contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="contact-row" id="contact-main">
+          <div id="contact-info">
+
+            <div id="contact-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Location:</h4>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+
+            <div id="contact-email">
+              <i class="far fa-envelope"></i>
+              <h4>Email:</h4>
+              <p>info@example.com</p>
+            </div>
+
+            <div id="contact-number">
+              <i class="fas fa-mobile-alt"></i>
+              <h4>Call:</h4>
+              <p>+1 5589 55488 55s</p>
+            </div>
+
+            <div id="contact-map">
+              <img src="./portfolio-img/contact-map.png" alt="map" />
+            </div>
+
+          </div>
+
+          <div id="contact-input">
+            <div class="contact-row">
+              <div id="contact-yourName">
+                <label>
+                  Your Name
+                </label>
+                <input type="text" />
+              </div>
+
+              <div id="contact-yourEmail">
+                <label>
+                  Your Email
+                </label>
+                <input type="text" />
+              </div>
+            </div>
+
+            <div id="contact-yourSubject">
+              <label>
+                Your subject
+              </label>
+              <input type="text" />
+            </div>
+
+            <div id="contact-yourMessage">
+              <label>
+                Message
+              </label>
+              <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div id="contact-sendBtn">
+              <button>
+                Send Message
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </section>
   </main>
   <footer>
+    <!-------------------------------------------------------->
     <section id="newsletter">
-      <div class="center-align"></div>
+      <div id="news-container">
+        <div id="news-align">
+          <div id="news-content">
+
+            <h4>
+              Join Our Newsletter
+            </h4>
+
+            <div id="news-text">
+              <span>
+                Tamen quem nulla quae legam multos aute sint culpa legam noster magna
+              </span>
+            </div>
+
+            <fieldset id="news-subscribe">
+              <input id="news-input" type="email" />
+              <button id="news-btn">Subscribe</button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-------------------------------------------------------->
     <section id="links">
-      <div class="center-align"></div>
+      <div class="center-align">
+        <div id="links-container">
+          <div id="links-row">
+            <div class="links-col links-firstcol">
+              <h3>ARSHA</h3>
+              <p>
+                A108 Adam Street
+                <br>
+                New York, NY 535022
+                <br>
+                United States A108 Adam Street
+                <br>
+                <br>
+                <span class="ads-bold">Phone:</span> +1 5589 55488 55
+                <br>
+                <span class="ads-bold">Email:</span> info@example.com
+              </p>
+            </div>
+
+            <div class="links-col">
+              <h4>
+                Useful Links
+              </h4>
+
+              <ul>
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANhJREFUSEvt1bEJAjEUBuA/ZgAdwEI3cIRYCAEbnUA3cgU3OPGwstAR3MDCgO05wCVyYHVwkPdeME1SJ3zkf8l7CpmWyuSiwH9LvkQdFbWpnpP7dt5EbR7YRI7ant0+AAevsbyupw8uToJt/TIhqNsPayQ4Ce5AW7tjCNhJcTKcCmfBKXA2LMVFsARPDX+8hon5ZiK498Kj0S4pNixB2bAUZcEpUDJsq/cs6Lbrz2MApJr2ezq5xquLW4xanLzGJub1Dg0RMsydRuIbF5ibQKkxNznyuWxRfwHgzX4ffnwy0wAAAABJRU5ErkJggg==" />
+                  <a href="#">Home</a>
+                </li>
+
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANhJREFUSEvt1bEJAjEUBuA/ZgAdwEI3cIRYCAEbnUA3cgU3OPGwstAR3MDCgO05wCVyYHVwkPdeME1SJ3zkf8l7CpmWyuSiwH9LvkQdFbWpnpP7dt5EbR7YRI7ant0+AAevsbyupw8uToJt/TIhqNsPayQ4Ce5AW7tjCNhJcTKcCmfBKXA2LMVFsARPDX+8hon5ZiK498Kj0S4pNixB2bAUZcEpUDJsq/cs6Lbrz2MApJr2ezq5xquLW4xanLzGJub1Dg0RMsydRuIbF5ibQKkxNznyuWxRfwHgzX4ffnwy0wAAAABJRU5ErkJggg==" />
+                  <a href="#">About us</a>
+                </li>
+
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANhJREFUSEvt1bEJAjEUBuA/ZgAdwEI3cIRYCAEbnUA3cgU3OPGwstAR3MDCgO05wCVyYHVwkPdeME1SJ3zkf8l7CpmWyuSiwH9LvkQdFbWpnpP7dt5EbR7YRI7ant0+AAevsbyupw8uToJt/TIhqNsPayQ4Ce5AW7tjCNhJcTKcCmfBKXA2LMVFsARPDX+8hon5ZiK498Kj0S4pNixB2bAUZcEpUDJsq/cs6Lbrz2MApJr2ezq5xquLW4xanLzGJub1Dg0RMsydRuIbF5ibQKkxNznyuWxRfwHgzX4ffnwy0wAAAABJRU5ErkJggg==" />
+                  <a href="#">Services</a>
+                </li>
+
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANhJREFUSEvt1bEJAjEUBuA/ZgAdwEI3cIRYCAEbnUA3cgU3OPGwstAR3MDCgO05wCVyYHVwkPdeME1SJ3zkf8l7CpmWyuSiwH9LvkQdFbWpnpP7dt5EbR7YRI7ant0+AAevsbyupw8uToJt/TIhqNsPayQ4Ce5AW7tjCNhJcTKcCmfBKXA2LMVFsARPDX+8hon5ZiK498Kj0S4pNixB2bAUZcEpUDJsq/cs6Lbrz2MApJr2ezq5xquLW4xanLzGJub1Dg0RMsydRuIbF5ibQKkxNznyuWxRfwHgzX4ffnwy0wAAAABJRU5ErkJggg==" />
+                  <a href="#">Terms of service</a>
+                </li>
+
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANhJREFUSEvt1bEJAjEUBuA/ZgAdwEI3cIRYCAEbnUA3cgU3OPGwstAR3MDCgO05wCVyYHVwkPdeME1SJ3zkf8l7CpmWyuSiwH9LvkQdFbWpnpP7dt5EbR7YRI7ant0+AAevsbyupw8uToJt/TIhqNsPayQ4Ce5AW7tjCNhJcTKcCmfBKXA2LMVFsARPDX+8hon5ZiK498Kj0S4pNixB2bAUZcEpUDJsq/cs6Lbrz2MApJr2ezq5xquLW4xanLzGJub1Dg0RMsydRuIbF5ibQKkxNznyuWxRfwHgzX4ffnwy0wAAAABJRU5ErkJggg==" />
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="links-col">
+              <h4>
+                Our Services
+              </h4>
+
+              <ul>
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANhJREFUSEvt1bEJAjEUBuA/ZgAdwEI3cIRYCAEbnUA3cgU3OPGwstAR3MDCgO05wCVyYHVwkPdeME1SJ3zkf8l7CpmWyuSiwH9LvkQdFbWpnpP7dt5EbR7YRI7ant0+AAevsbyupw8uToJt/TIhqNsPayQ4Ce5AW7tjCNhJcTKcCmfBKXA2LMVFsARPDX+8hon5ZiK498Kj0S4pNixB2bAUZcEpUDJsq/cs6Lbrz2MApJr2ezq5xquLW4xanLzGJub1Dg0RMsydRuIbF5ibQKkxNznyuWxRfwHgzX4ffnwy0wAAAABJRU5ErkJggg==" />
+                  <a href="#">Web Design</a>
+                </li>
+
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANhJREFUSEvt1bEJAjEUBuA/ZgAdwEI3cIRYCAEbnUA3cgU3OPGwstAR3MDCgO05wCVyYHVwkPdeME1SJ3zkf8l7CpmWyuSiwH9LvkQdFbWpnpP7dt5EbR7YRI7ant0+AAevsbyupw8uToJt/TIhqNsPayQ4Ce5AW7tjCNhJcTKcCmfBKXA2LMVFsARPDX+8hon5ZiK498Kj0S4pNixB2bAUZcEpUDJsq/cs6Lbrz2MApJr2ezq5xquLW4xanLzGJub1Dg0RMsydRuIbF5ibQKkxNznyuWxRfwHgzX4ffnwy0wAAAABJRU5ErkJggg==" />
+                  <a href="#">Web Development</a>
+                </li>
+
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANhJREFUSEvt1bEJAjEUBuA/ZgAdwEI3cIRYCAEbnUA3cgU3OPGwstAR3MDCgO05wCVyYHVwkPdeME1SJ3zkf8l7CpmWyuSiwH9LvkQdFbWpnpP7dt5EbR7YRI7ant0+AAevsbyupw8uToJt/TIhqNsPayQ4Ce5AW7tjCNhJcTKcCmfBKXA2LMVFsARPDX+8hon5ZiK498Kj0S4pNixB2bAUZcEpUDJsq/cs6Lbrz2MApJr2ezq5xquLW4xanLzGJub1Dg0RMsydRuIbF5ibQKkxNznyuWxRfwHgzX4ffnwy0wAAAABJRU5ErkJggg==" />
+                  <a href="#">Product Management</a>
+                </li>
+
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANhJREFUSEvt1bEJAjEUBuA/ZgAdwEI3cIRYCAEbnUA3cgU3OPGwstAR3MDCgO05wCVyYHVwkPdeME1SJ3zkf8l7CpmWyuSiwH9LvkQdFbWpnpP7dt5EbR7YRI7ant0+AAevsbyupw8uToJt/TIhqNsPayQ4Ce5AW7tjCNhJcTKcCmfBKXA2LMVFsARPDX+8hon5ZiK498Kj0S4pNixB2bAUZcEpUDJsq/cs6Lbrz2MApJr2ezq5xquLW4xanLzGJub1Dg0RMsydRuIbF5ibQKkxNznyuWxRfwHgzX4ffnwy0wAAAABJRU5ErkJggg==" />
+                  <a href="#">Marketing</a>
+                </li>
+
+                <li>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANhJREFUSEvt1bEJAjEUBuA/ZgAdwEI3cIRYCAEbnUA3cgU3OPGwstAR3MDCgO05wCVyYHVwkPdeME1SJ3zkf8l7CpmWyuSiwH9LvkQdFbWpnpP7dt5EbR7YRI7ant0+AAevsbyupw8uToJt/TIhqNsPayQ4Ce5AW7tjCNhJcTKcCmfBKXA2LMVFsARPDX+8hon5ZiK498Kj0S4pNixB2bAUZcEpUDJsq/cs6Lbrz2MApJr2ezq5xquLW4xanLzGJub1Dg0RMsydRuIbF5ibQKkxNznyuWxRfwHgzX4ffnwy0wAAAABJRU5ErkJggg==" />
+                  <a href="#">Graphic Design</a>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="links-col">
+              <h4>Our Social Networks</h4>
+              <p id="links-lastcol">
+                Cras fermentum odio eu feugiat lide par
+                naso tierra videa magna derita valies
+              </p>
+
+              <div class="links-icon">
+
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAcpJREFUSEvtVsFRAzEM3K0AOiAdABUQKoBUAFRAqIBQAVABUAFJBUAH0AElhArELGPf+Hy+s+ObIZ9oJo8kslZaSysTWzJuCRc74H9jfjTVZrYP4BrA1H2+ATwDeCS5ViVmNgGw9t/1WwvYBXkFMAud+mhwAd8AKHBsPoFzAD8klVhjMbCcBLwkOcvxbmbvAE4yfl8AFHdCUv5/FgMvANy6/+R0Q/IzFdjMVIGqzZnoFs40jBUDp4Ipmea+PIqZzQHc51BFcwzaqdg1giWCKeul+3zo/s0sZGcI/46kfFvW6WozuwTwVFCJmifVVPHRPLCj7wDAkRuNAvysyxVJjVd/xRs0TBYtcDhONWhqjkXh3iaRB3w1vxKYjo2545LcViQ1w3lg19m6Y3XiWUn0AZ/TUDRCv6RWuyYTaEvmNkxCY9d7vg9YYyLFGnPXyabyyfduJzMT3ZLNGnBJ7cMQQ4Nr0W0rCYqSuCik+oWkzgxaCbCWhnS5xIpAFagBdtUdAtDcqUKvXsk5jLLQIpinFKov29R20hjldqyPJ0DJ4aLk4VAyTupqf7eq2Ceipa5NJXXTY0Ebq8pGv7mqUOMXSG2QmnO7imtYqzrzC9pUlR9K9AFxAAAAAElFTkSuQmCC" />
+                </a>
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAN1JREFUSEvtVsENwjAQsyeBTYANWIFJgElgA8QEwAaMUDZgA6MTRTpFDWlKS1W190xPce2zkxA9FXvCxXCBJc0BzJxyD5JFSsnGjCUtARwAGLCvG0n79rUaAUtaAzhFdu4U2KT08nbPuJT4EsoL4FquFSSPrUtdIbOZKZxzCjc/TpJ2ALZu51ozDf8k21zjAJZkxlkkB/duOJO0uP2e40zgPUnzwd+BN63FKZPxiuQn01HWk6tTnsA4cuxlmBgDmC6JZDKsYVAHiL02/IvjSfJei6ZrymacCxDrHx/wC1cUeh/U3anMAAAAAElFTkSuQmCC" />
+                </a>
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhRJREFUSEvlVu0xREEQ7I4AESACRIAIEACFBMjAiQAR+EgAEeC3H06V/2SACFq1mqf2vdt39t2pOsr8ubq73e2Z3p6eJSYUnBAufjewpGkAC4XsPJJ8+25ta8UBdgBgHcDcdwc1/n8BcAXgsC2JLLCkFQCnCeA7gH4h+CKAqVjrBDZIDuwdAI5KHwL0GsA+SR9QHJIMfgxgGYD3LjUrzwF7wx6Aa5KmuVNI2gRAkheSbgP8hOR+elAO2BnOApgfoVKDXgTATlR740+S863AQfMrACvTdA1E0LgGoPrf92d2+pK2AJzHpl2Sp5IU32dSumsVh6ic4R1JC6wWknoArPRc9EgeSto21QCeSN5LcmJuxVWSpv4zioETUCvcOqgOcYK+PyvZ7ePkviK55+7AQa+VbtC5pkLjiqwNg9e0MS5wRfFARVVpkqpuqK0ZF9guZEHV6GpQ6ta7bLbhnwWeGNXuWYvLU8fiqU2fENczAE+xnxOX7zJpJ4Om7eS7de8a9GfbKVHuMAPJKr7UQJy1LbNPcqnFMj2bXWFqmWdtvl5kmUHpyEMiY7F2NVvwO0kX9RXDxuIVyY0WXy76uetYdGY2do9G+/HOCOPR13AEwBVnbXbY0+cswF2dldzl6VPRatD1dCplp1PDAr3ZKraQqjdUEcVRpW3Wz6bsi7PoXS3JSi59ab7lHnfNjIuAS8vssu7/AX8A9G5ULowqLPIAAAAASUVORK5CYII=" />
+                </a>
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAi9JREFUSEvNlo1RVEEQhLsjECMQIlAywAg0AzUCMQI1AjECMQI1AiUCIQIgAjCCsb6r3atlf+7tIVXnVL26uvd2tqdnembX2pF5R7j6v4Ej4khS2D57qAwNGUfEM0mfJAFa2qmkq+LFuaQL2+W7xfi6wBHxWtKXRe+7CwB+Y/vXjF8DnJj+lLQ3s0FnzXdJ75Yy0AMmla/uCZrdbiU9t00ZutYDJmVPBuuvJcGIJ9tLSTy1D/sc2iaIxu4ApzT/HoB+tU3tuxYRHyS9rz4OfWaBr23vs2lEUHtKwS+sfmRWEdErE6yblM+m+rPt4wRcM2NT6nkbESeS3las177l+1lxfbQNIIx7rQZznrrncbmyfVDXpwfcq9W57cPsHBGkHUExZAAbiXHlYrvBmQXGn+FADRtLoiTgFwPtPa7VvQ0wezKVAD/rDYiBuPA7qNdvC1wSQlQEgqpXYzIp/qap52Sqqd23yvlCEqnkW2+qrRlFRHTS3bRUjzHCuaycS1Uztcpa/pG0n9qJ3m4Yp9lNq61tdDrVg6BWNS2Fmmmh01y/iKDXOUproxxkaxEY1tTwUbGWYDh1urM3XRY41Xo2B5yE0hsUgOaLAIGR2tzLveGRgyDg5VTn1YPBPyC18fVyO9XuKYWw3DidNsA2aWbt1C0z9Sep2vaCQBse9XQxBVyySeORuq6OyWQo9mnxnxYj0JOpi8B9ilfoIQuN02jxxrk1438JbrGPH2rzTfvsjPFf3s/kH1d8vMsAAAAASUVORK5CYII=" />
+                </a>
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAVZJREFUSEvtlrEuREEYhb/zAIJCo6JV0ZPwBGglEhsFJZ0OTyA6HRKJkhcQQi9U2n0Eku2PzGZt7v131y6Zm5XYaW7unbnz3Tn/mTlXDKlpSFz+Ftj2FjAF3El6rkKVjhXbfgIWC7BNSVe54SWw7R3gLEDeJM1VDT4EjgKkIWmsavAS8Bgg15I2KgWnyW3vAgfANHADbEtqVA7ODeg1X9Z9bHseGG/BXiW9DwS2vQzch8HHkpqGs52uyYDtJkm214ATYCa8ewvsS6rHD4jb6cdgoAacf1OiBF2Iq88BTnJO9PHGqaS9klLFm99IHYAfhRoXu+qSZqsA1yRdtHzQrVypa7Iodw6pLyWlUGk328lUq0GNFUkPX89ygNclJVAR3OF+IDu4NGGvbTcC56jxSOquZ/rIXNFc6bBPmRrP2Was2U6xF6PvJSbPIOOy/gj0SahS9/8DfwJIsAkuQy9vSgAAAABJRU5ErkJggg==" />
+                </a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-------------------------------------------------------->
     <section id="copyright">
-      <div class="center-align"></div>
+      <div class="center-align">
+        <div id="copyright-content">
+
+          <div id="copyright-left">
+            <span>
+              © Copyright <span class="ads-bold">Arsha</span>. All Rights Reserved
+            </span>
+          </div>
+
+          <div id="copyright-right">
+            <span>
+              Designed by <a href="https://bootstrapmade.com/demo/Arsha/">BootstrapMade</a>
+            </span>
+          </div>
+
+        </div>
+      </div>
     </section>
   </footer>
+  <a href="#" id="to-top">
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPxJREFUSEvt1G0RwjAMBuA3CkACDkDCkIADJCABCUjAARKYBHCABFAQLncZV0Y/kt6O/el+bXdpn/ZdWsJMD83kosF/S746amZeyiqJ6Fmz2ipY0auC2xrcDQfoRuEbADfugiPokLIbN8MZtAo3wRH0BWChYvhu3nkRjqB3AEcAF4V3+r32/PMsnEA7ANJYn64GIDvtAZjxJJxC5egws+Dhceq13oyX4GEiibcbzmsMlphH+NeY8SVjifoE4BBeEik4wH/GuODUVZiDrddnsatjEzWYiKQJXU+L2hQXM68A7LX4TEQP08CgqCpqLxKrb/AUKZrmaFGbYpqi6A3yIIof2ITnzwAAAABJRU5ErkJggg==" />
+  </a>
+
+  <script src="https://kit.fontawesome.com/70e0dc75f1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

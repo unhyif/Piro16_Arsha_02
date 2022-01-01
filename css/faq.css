@@ -1,0 +1,86 @@
+/* FAQ -기능*/
+#faq{
+    background: var(--light-blue);
+    padding: 6rem 0;
+}
+
+#faq-title{
+    position: relative;
+    animation: upward-animation 1.5s 0s 1;
+}
+
+.faq-hidden{
+    position: relative;
+    animation: upward-animation 1.5s 0s 1;
+}
+
+/* faq design */
+.faq-main{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.faq-hidden li{
+    position: relative;
+    background: white;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    vertical-align: middle;
+}
+
+.faq-icon i{
+    position: absolute;
+    right: 2.5rem;
+    top: 2.2rem;
+}
+
+.faq-hiddenPara{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    transition-duration: 1s;
+}
+
+.faq-hiddenPara-btn{
+    font-family: "Poppins", sans-serif;
+}
+
+.faq-hiddenPara-btn .fa-question-circle{
+    color: var(--sky-blue);
+}
+
+
+/* 기능 */
+.faq-hiddenPara-btn .faq-icon .fa-chevron-up{
+    display: none;
+}
+/* hover 색변화 */
+.faq-hiddenPara-btn:hover{
+    color: var(--sky-blue);
+}
+
+/* checked 색변화 */
+.faq-hidden-li input:checked ~ .faq-hiddenPara-btn{
+    color: var(--sky-blue);
+}
+
+/* checked menu open */
+.faq-hidden-li input:checked ~ .faq-hiddenPara{
+    padding-top: 1.5rem;
+
+    height: 5rem;
+}
+#second-btn:checked ~ .faq-hiddenPara{
+    height: 6.5rem;
+}
+#third-btn:checked ~ .faq-hiddenPara{
+    height: 6.5rem;
+}
+
+/* checked change icon */
+.faq-hidden-li input:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
+    display: block;
+}
+.faq-hidden-li input:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
+    display: none;
+}

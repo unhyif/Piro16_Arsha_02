@@ -1,0 +1,49 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  box-shadow: 0 0 2.5rem 0 rgb(0 0 0 / 10%);
+  width: 26.1rem;
+  padding: 5rem 3rem;
+  background: #fff;
+  transform-origin: 6.5rem 13rem;
+  position: relative;
+  bottom: 0;
+  animation: expand2-jh 1s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* .card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.card:last-child {
+  animation-delay: 0.3s;
+} */
+.card:hover {
+  bottom: 1rem;
+}
+.card:hover h4 {
+  color: var(--sky-blue);
+}
+.card i {
+  display: block;
+  height: 4rem;
+  color: var(--sky-blue);
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+}
+.card h4 {
+  height: 2.8792rem;
+  color: #37517e;
+  font-family: "Jost", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.card p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}

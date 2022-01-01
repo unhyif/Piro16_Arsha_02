@@ -1,0 +1,586 @@
+@import "css/variables.css";
+
+#cta .center-align {
+  margin: auto auto;
+  width: auto;
+}
+
+#cta .container {
+  max-width: 1320px; /* problem..? */
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#cta .row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+#cta .row > * {
+  /* flex-shrink: 0; */
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+#cta h3 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: "Jost", sans-serif;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+#cta p {
+  color: #fff;
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 1.6rem;
+  line-height: 2.3rem;
+}
+
+#cta .cta-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  padding: 1.2rem 4rem;
+  /* local optimization 12px - not localized */
+  border-radius: 5rem;
+  margin: 1rem;
+  border: 0.2rem solid #fff;
+  color: #fff;
+}
+
+#cta .cta-btn:hover {
+  background-color: #47b2e4;
+  border: 0.2rem solid #47b2e4;
+}
+
+#cta .cta-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@keyframes startScale {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#cta .animation {
+  animation: startScale 1.5s ease-in-out;
+}
+
+#cta .col-lg-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+#cta .col-lg-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+#cta .text-lg-start {
+  text-align: left !important;
+}
+
+#cta .text-center {
+  text-align: center !important;
+}
+
+#cta {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+    url(https://bootstrapmade.com/demo/templates/Arsha/assets/img/cta-bg.jpg)
+      fixed center center;
+  background-size: cover;
+  padding: 12rem 0;
+}
+
+/* -------------team------------- */
+
+#team .center-align {
+  margin: auto auto;
+  width: auto;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+#team .container {
+  max-width: 1320px;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+section #team {
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+#team .member {
+  position: relative;
+  box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 10%);
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  transition: 0.5s;
+}
+
+#team .member:hover {
+  transform: translateY(-10px);
+}
+
+#team .align-items-start {
+  align-items: flex-start !important;
+}
+
+#team .member .pic {
+  overflow: hidden;
+  width: 18rem;
+  border-radius: 50%;
+}
+
+#team .mt-lg-0 {
+  margin-top: 0 !important;
+}
+
+#team .mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+#team .col-lg-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+#team .row {
+  --bs-gutter-x: 2.5rem;
+  /* local optimization */
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+#team .team .member .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+#team .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+#team img,
+svg {
+  vertical-align: middle;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #37517e;
+  font-family: "Jost", sans-serif;
+}
+
+#team .member span {
+  display: block;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+  font-weight: 500;
+}
+
+#team .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  line-height: 2rem;
+  /* ine-height: 조금 안맞아서 추가 */
+}
+
+/* --------under icons--------- */
+#team a {
+  color: #47b2e4;
+  text-decoration: none;
+}
+
+#team .member .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: #eff2f8;
+}
+
+#team .member .social {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#team .member .social a i {
+  color: #37517e;
+  font-size: 1.6rem;
+  margin: 0 0.2rem;
+}
+
+#team .member .social a + a {
+  margin-left: 0.8rem;
+}
+
+#team .member .social a:hover {
+  background: #47b2e4;
+}
+
+#team .member .social a:hover i {
+  color: #fff;
+}
+
+/* ----------------- */
+
+#team .member .member-info {
+  padding-left: 3rem;
+  line-height: 1.2;
+}
+
+@keyframes startTranslate {
+  from {
+    transform: translateY(4.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(1);
+    opacity: 1;
+  }
+}
+
+#team .section-title {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+#team .animation {
+  animation: startTranslate 1s ease-in-out;
+}
+
+@keyframes Scale1 {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#team .animation1 {
+  animation: Scale1 1s ease-in-out;
+}
+#team .animation2 {
+  animation: Scale1 1.2s ease-in-out;
+}
+#team .animation3 {
+  animation: Scale1 1.4s ease-in-out;
+}
+#team .animation4 {
+  animation: Scale1 1.8s ease-in-out;
+}
+
+#team .section-title h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  color: #37517e;
+  font-family: "Jost", sans-serif;
+  line-height: 1.2;
+  display: block;
+}
+
+#team {
+  background-color: #f3f5fa;
+}
+
+#team .section-title p {
+  margin-bottom: 0;
+  line-height: 2.3rem;
+}
+
+#team center-align {
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+#team .row > * {
+  /* flex-shrink: 0;*/
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+#team .align-items-start {
+  align-items: flex-start !important;
+}
+
+#team .d-flex {
+  display: flex !important;
+}
+
+/* -------------pricing------------- */
+
+#pricing .animation {
+  animation: startTranslate 1s ease-in-out;
+}
+
+@keyframes startTranslateFar {
+  from {
+    transform: translateY(9rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(1);
+    opacity: 1;
+  }
+}
+
+#pricing .animation1 {
+  animation: startTranslateFar 1s ease-in-out;
+}
+#pricing .animation2 {
+  animation: startTranslateFar 1.2s ease-in-out;
+}
+#pricing .animation3 {
+  animation: startTranslateFar 1.4s ease-in-out;
+}
+
+#pricing .container {
+  max-width: 1320px;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#pricing .section-title {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+#pricing .center-align {
+  margin: auto auto;
+  width: auto;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+#pricing .animation {
+  animation: startTranslate 1s ease-in-out;
+}
+
+#pricing .section-title h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  color: #37517e;
+  font-family: "Jost", sans-serif;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+#pricing .section-title p {
+  margin-bottom: 0;
+  line-height: 2.3rem;
+}
+
+#pricing .row {
+  padding-top: 4rem;
+  --bs-gutter-x: 2.5rem;
+  /* local optimization */
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+#pricing .col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+#pricing .row > * {
+  flex-shrink: 0;
+  max-width: 99%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+#pricing .box {
+  padding: 6rem 4rem;
+  box-shadow: 0 3px 20px -2px rgb(20 45 100 / 10%);
+  background: #fff;
+  height: 100%;
+  border-top: 0.4rem solid #fff;
+  border-radius: 0.5rem;
+}
+
+#pricing h3 {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #37517e;
+  font-family: "Jost", sans-serif;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+#pricing h4 {
+  font-size: 4.8rem;
+  color: #37517e;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 2.5rem;
+}
+
+#pricing h4 sup {
+  font-size: 2.8rem;
+}
+
+#pricing sup {
+  top: -0.5em;
+  position: relative;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+#pricing h4 span {
+  color: #47b2e4;
+  font-size: 1.8rem;
+  display: block;
+}
+
+#pricing ul {
+  padding: 2rem 0;
+  list-style: none;
+  color: #999;
+  text-align: left;
+  line-height: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+#pricing ul li {
+  padding: 1rem 0 1rem 3rem;
+  position: relative;
+}
+
+#pricing ul i {
+  color: #28a745;
+  font-size: 2.4rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+}
+
+#pricing .bx {
+  font-family: boxicons !important;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  text-transform: none;
+}
+
+/* #pricing .bx-check:before {
+  box-sizing: border-box;
+} */
+
+#pricing ul .na i {
+  color: #ccc;
+}
+
+#pricing ul .na span {
+  text-decoration: line-through;
+}
+
+#pricing li {
+  text-align: -webkit-match-parent;
+}
+
+#pricing .buy-btn {
+  display: inline-block;
+  padding: 1.2rem 3.5rem;
+  border-radius: 5rem;
+  color: #47b2e4;
+  transition: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  transition: 0.3s;
+  border: 0.1rem solid #47b2e4;
+}
+
+#pricing .buy-btn:hover {
+  background-color: #47b2e4;
+  border: 0.1rem solid #47b2e4;
+  color: white;
+}
+
+#pricing .featured .buy-btn {
+  background: #47b2e4;
+  color: #fff;
+}
+
+#pricing .featured {
+  border-top-color: #47b2e4;
+}
+
+#pricing .col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+#pricing ul .na {
+  color: #ccc;
+}
