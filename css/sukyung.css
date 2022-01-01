@@ -163,7 +163,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 132rem;
+    width: 108rem;
     padding: 0 1.2rem;
 }
 
@@ -289,13 +289,13 @@
 
 .hero-container {
     padding: 7.6rem 1.2rem 0;
-    width: 132rem;
+    width: 108rem;
 }
 
 .hero-row {
     display: flex;
     align-items: center;
-    width: 132rem;
+    width: 108rem;
     height: 52.6rem;
 }
 
@@ -424,14 +424,14 @@
 }
 
 .clients-container {
-    width: 132rem;
+    width: 108rem;
     height: 7.82rem;
     margin: auto;
 }
 
 .clients-container-row {
     display: flex;
-    width: 132rem;
+    width: 108rem;
     height: 100%;
 }
 
