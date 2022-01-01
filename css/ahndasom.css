@@ -71,12 +71,10 @@
 
 .about-text{
     margin-bottom: 1rem;
-    /* line-height: 1.5; */
 }
 
 #about-list {
     list-style: none;
-    /* list-style-image: url(./check-double-fill.png); */
 }
 
 #about-list li {
@@ -224,9 +222,7 @@
 }
 
 
-
-
-
+/* -------------------------------------------------- */
 
 #links {
     padding: 60px 0 30px 0;
@@ -305,10 +301,6 @@
     font-size: 18px;
     line-height: 1;
 }
-/* 
-.links-start::before {
-    content: "\ecb3";
-} */
 
 .links-col a:hover{
     color: var(--sky-blue);
@@ -356,6 +348,7 @@
 
 
 
+/* -------------------------------------------------- */
 
 #copyright {
     padding-top: 30px;
@@ -402,6 +395,9 @@
     opacity: 1;
 }
 
+
+/* -------------------------------------------------- */
+
 #to-top {
     position: fixed;
     /* visibility: hidden;
@@ -431,10 +427,5 @@
 #to-top:hover {
     background-color: #6bc1e9;
 }
-
-
-/* #top-arrow::before {
-    content: "\f145";
-} */
 
 
