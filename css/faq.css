@@ -6,12 +6,12 @@
 
 #faq-title{
     position: relative;
-    animation: upward-animation 1.5s 0.5s 1;
+    animation: upward-animation 1.5s 0s 1;
 }
 
 .faq-hidden{
     position: relative;
-    animation: upward-animation 1.5s 0.5s 1;
+    animation: upward-animation 1.5s 0s 1;
 }
 
 /* faq design */
@@ -39,6 +39,14 @@
     overflow: hidden;
     transition: all 0.3s;
     transition-duration: 1s;
+}
+
+.faq-hiddenPara-btn{
+    font-family: "Poppins", sans-serif;
+}
+
+.faq-hiddenPara-btn .fa-question-circle{
+    color: var(--sky-blue);
 }
 
 
