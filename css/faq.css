@@ -9,7 +9,7 @@
     animation: upward-animation 1.5s 0s 1;
 }
 
-.faq-hidden{
+.faq-accordion{
     position: relative;
     animation: upward-animation 1.5s 0s 1;
 }
@@ -20,104 +20,80 @@
     font-weight: 500;
 }
 
-.faq-hidden li{
+.faq-accordion {
     position: relative;
+    padding: 0 10rem;
+}
+
+[id*="faq-open-accordion"], [id*="faq-close-accordion"] {
     background: white;
-    padding: 2rem;
-    margin-bottom: 1rem;
-    vertical-align: middle;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+    line-height: 40px;
+    display: block;
+    position: relative;
+    width: 100%;
 }
 
-.faq-icon i{
-    position: absolute;
-    right: 2.5rem;
-    top: 2.2rem;
+[id*="faq-close-accordion"] {
+    display: none;
 }
 
-.faq-hiddenPara{
-    height: 0;
-    overflow: hidden;
-    transition: all 0.3s;
-    transition-duration: 0.5s;
-}
-
-.faq-hiddenPara-btn{
+.faq-accordion div a {
+    position: relative;
     font-family: "Poppins", sans-serif;
     color: var(--dark-blue);
+    padding: 2rem;
 }
 
-.faq-hiddenPara-btn .fa-question-circle{
-    color: var(--sky-blue);
+.fa-chevron-up, .fa-chevron-down{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
 }
 
-
-/* 기능 */
-.faq-hiddenPara-btn .faq-icon .fa-chevron-up{
-    display: none;
-}
-/* hover 색변화 */
-.faq-hiddenPara-btn:hover{
-    color: var(--sky-blue);
-}
-
-/* checked 색변화 */
-.faq-hidden-li input:checked ~ .faq-hiddenPara-btn{
-    color: var(--sky-blue);
-}
-
-/* checked menu open */
-.faq-hidden-li input:checked ~ .faq-hiddenPara{
-    padding-top: 1.5rem;
-
-    height: 5rem;
-}
-#second-btn:checked ~ .faq-hiddenPara{
-    height: 6.5rem;
-}
-#third-btn:checked ~ .faq-hiddenPara{
-    height: 6.5rem;
-}
-
-/* checked change icon */
-.faq-hidden-li input:checked ~ .faq-hiddenPara-btn .fa-chevron-up{
+.faq-target-fix {
     display: block;
-}
-.faq-hidden-li input:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
-    display: none;
-}
-
-
-
-
-/* ver2 */
-.faq-list{
-    position: relative;
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 
-.open-list{
-    position: relative;
-    display: block;
-}
-
-.close-list{
-    position: relative;
-    display: block;
-}
-
-.list-content{
+.faq-accordion-content {
+    background: #fff;
+    height: 0;
+    margin-bottom: 1rem;
+    padding: 0;
     position: relative;
     overflow: hidden;
-    height: 0;
+    width: 100%;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+}
+.faq-accordion-content p{
+    padding: 2rem;
 }
 
-.open-list:target ~ .close-list{
+.faq-accordion span:target ~ .faq-accordion-content {
+    display: block;
+    height: 10rem;
+}
+
+.faq-accordion #faq-accordion1:target ~ .faq-accordion-content {
+    display: block;
+    height: 8rem;
+}
+
+.faq-accordion span:target ~ [id*="faq-close-accordion"] {
+    color: var(--sky-blue);
     display: block;
 }
-.open-list:target ~ .open-list{
+
+.faq-accordion span:target ~ [id*="faq-open-accordion"] {
     display: none;
 }
 
-.open-list:target ~ .list-content{
-    display: block;
-    height: auto;
+[id*="faq-open-accordion"]:hover{
+    color: var(--sky-blue);
 }
