@@ -53,6 +53,11 @@
     border-radius: 5rem;
 }
 
+#contact-info div:hover > i{
+    background: #47b2e4;
+    color: white;
+}
+
 #contact-map{
     position: relative;
     width: 39.1rem;
