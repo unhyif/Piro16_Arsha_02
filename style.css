@@ -5,9 +5,12 @@
 @import "css/yubin.css";
 @import "css/sukyung.css";
 @import "css/jihyun.css";
+@import "css/ahndasom.css";
+
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
