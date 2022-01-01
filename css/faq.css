@@ -43,6 +43,7 @@
 
 .faq-hiddenPara-btn{
     font-family: "Poppins", sans-serif;
+    color: var(--dark-blue);
 }
 
 .faq-hiddenPara-btn .fa-question-circle{
