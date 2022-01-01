@@ -8,14 +8,7 @@
 .accordion-jh__li:last-child {
   margin-bottom: 0;
 }
-.accordion-jh__li input {
-  position: fixed;
-  left: -9999px;
-}
-
-/* When checkbox isn't checked */
-
-.accordion-jh__li label {
+.accordion-jh__li a > div {
   height: 2.467rem;
   color: #343a40;
   font-family: "Poppins", sans-serif;
@@ -25,21 +18,21 @@
   align-items: center;
   cursor: pointer;
 }
-.accordion-jh__li label > div {
+.accordion-jh__li a > div div {
   display: flex;
   align-items: center;
 }
-.accordion-jh__li label span:first-child {
+.accordion-jh__li a span:first-child {
   color: var(--sky-blue);
   font-size: 1.8rem;
   font-weight: 600;
   padding-right: 1.3rem;
 }
-.accordion-jh__li label span:nth-child(2) {
+.accordion-jh__li a span:nth-child(2) {
   font-size: 1.6rem;
   font-weight: 500;
 }
-.accordion-jh__li label:hover {
+.accordion-jh__li a:hover div {
   color: var(--sky-blue);
 }
 .accordion-jh__li i {
@@ -48,43 +41,55 @@
   top: 0.1rem;
   right: 0.5rem;
 }
-.accordion-jh__li .fa-chevron-up {
-  top: -0.1rem;
-  right: 0.5rem;
+
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+[id*="open-accordion"],
+[id*="close-accordion"] {
+  display: block;
+}
+[id*="close-accordion"] {
   display: none;
 }
-#accordion-jh__check1 ~ #accordion-jh__pop1,
-#accordion-jh__check2 ~ #accordion-jh__pop2,
-#accordion-jh__check3 ~ #accordion-jh__pop3 {
+.accordion-content {
   line-height: 1.5;
   height: 0;
-  overflow: hidden; /* to hide the content */
+  overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-
-/* When checkbox is checked */
-
-/* soft effects */
-#accordion-jh__check1:checked ~ #accordion-jh__pop1 {
-  height: 8.2rem; /* content height + padding-top (∵ box-sizing: border-box;) */
+.accordion .accordion-jh__li span:target ~ [id*="close-accordion"] div {
+  color: var(--sky-blue);
+}
+.accordion
+  .accordion-jh__li
+  span:target
+  ~ [id*="close-accordion"]
+  div:hover
+  span:last-child,
+.accordion .accordion-jh__li span:target ~ [id*="close-accordion"] div:hover i {
+  opacity: 0.7;
+}
+/* .accordion .accordion-jh__li span:target:hover {
+  color: #73c5eb;
+} */
+.accordion .accordion-jh__li:first-of-type span:target ~ .accordion-content {
+  display: block;
+  height: 8.2rem;
   padding-top: 1rem;
 }
-#accordion-jh__check2:checked ~ #accordion-jh__pop2,
-#accordion-jh__check3:checked ~ #accordion-jh__pop3 {
+.accordion .accordion-jh__li:nth-of-type(2) span:target ~ .accordion-content,
+.accordion .accordion-jh__li:nth-of-type(3) span:target ~ .accordion-content {
+  display: block;
   height: 13rem;
   padding-top: 1rem;
 }
-/* end soft effects */
-
-.accordion-jh__li input:checked ~ label {
-  color: var(--sky-blue); /* need to check */
-}
-.accordion-jh__li input:checked ~ label:hover {
-  color: #73c5eb;
-}
-.accordion-jh__li input:checked ~ label .fa-chevron-up {
+.accordion span:target ~ [id*="close-accordion"] {
   display: block;
 }
-.accordion-jh__li input:checked ~ label .fa-chevron-down {
+.accordion span:target ~ [id*="open-accordion"] {
   display: none;
 }
