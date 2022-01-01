@@ -530,8 +530,6 @@ svg {
   text-rendering: auto;
   display: inline-block;
   text-transform: none;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
 }
 
 /* #pricing .bx-check:before {
