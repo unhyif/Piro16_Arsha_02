@@ -85,3 +85,39 @@
 .faq-hidden-li input:checked ~ .faq-hiddenPara-btn .fa-chevron-down{
     display: none;
 }
+
+
+
+
+/* ver2 */
+.faq-list{
+    position: relative;
+}
+
+.open-list{
+    position: relative;
+    display: block;
+}
+
+.close-list{
+    position: relative;
+    display: block;
+}
+
+.list-content{
+    position: relative;
+    overflow: hidden;
+    height: 0;
+}
+
+.open-list:target ~ .close-list{
+    display: block;
+}
+.open-list:target ~ .open-list{
+    display: none;
+}
+
+.open-list:target ~ .list-content{
+    display: block;
+    height: auto;
+}
