@@ -20,7 +20,7 @@ section#eun-ipsam {
   opacity: 0;
   position: relative;
   top: 6rem;
-  animation: upwards 1s ease-in-out forwards;
+  animation: upwards-jh 1s ease-in-out forwards;
   animation-delay: 1s;
 }
 .eun-ipsam__title {
@@ -44,13 +44,12 @@ section#eun-ipsam {
   background-position: center center;
   transform: scale(0.5);
   opacity: 0;
-  animation: expand 1s ease-in-out forwards;
-  animation-delay: 1s;
+  animation: expand-jh 1s ease-in-out forwards;
+  animation-delay: 1.5s;
 }
 .eup-ipsam__img-wrapper img {
   width: 100%;
 }
-
 /* End Eun-Ipsam Section */
 
 /* ======= Skills Section ======= */
@@ -69,8 +68,8 @@ section#skills {
   position: relative;
   right: 6rem;
   opacity: 0;
-  animation: toTheRight 1s ease-in-out forwards;
-  animation-delay: 2s;
+  animation: toTheRight-jh 1s ease-in-out forwards;
+  animation-delay: 2.5s;
 }
 .skills__img-wrapper img {
   width: 54.6rem;
@@ -82,8 +81,8 @@ section#skills {
   position: relative;
   left: 6rem;
   opacity: 0;
-  animation: toTheLeft 1s ease-in-out forwards;
-  animation-delay: 2s;
+  animation: toTheLeft-jh 1s ease-in-out forwards;
+  animation-delay: 2.5s;
 }
 .skills__title {
   color: var(--dark-blue);
@@ -123,22 +122,21 @@ section#skills {
   width: 0;
 }
 .each-skill:first-child .percent {
-  animation: progress1 1s ease-in-out forwards;
-  animation-delay: 2.5s;
+  animation: progress1-jh 1s ease-in-out forwards;
+  animation-delay: 3.2s;
 }
 .each-skill:nth-child(2) .percent {
-  animation: progress2 1s ease-in-out forwards;
-  animation-delay: 2.5s;
+  animation: progress2-jh 1s ease-in-out forwards;
+  animation-delay: 3.2s;
 }
 .each-skill:nth-child(3) .percent {
-  animation: progress3 1s ease-in-out forwards;
-  animation-delay: 2.5s;
+  animation: progress3-jh 1s ease-in-out forwards;
+  animation-delay: 3.2s;
 }
 .each-skill:last-child .percent {
-  animation: progress4 1s ease-in-out forwards;
-  animation-delay: 2.5s;
+  animation: progress4-jh 1s ease-in-out forwards;
+  animation-delay: 3.2s;
 }
-
 /* End SKills Section */
 
 /* ======= Services Section ======= */
@@ -156,8 +154,8 @@ section#services {
   opacity: 0;
   position: relative;
   top: 6rem;
-  animation: upwards 1s ease-in-out forwards;
-  animation-delay: 3s;
+  animation: upwards-jh 1s ease-in-out forwards;
+  animation-delay: 4.2s;
 }
 .services__title {
   height: 5.84rem;
