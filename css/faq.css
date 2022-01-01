@@ -4,8 +4,19 @@
     padding: 60px 0;
 }
 
+#faq-title{
+    position: relative;
+    animation: upward-animation 1.5s 0.5s 1;
+}
+
+.faq-hidden{
+    position: relative;
+    animation: upward-animation 1.5s 0.5s 1;
+}
+
 .faq-hiddenPara{
     display:none;
+    transition: all 0.3s ease-in-out;
 }
 
 .faq-hiddenPara-btn .faq-icon .fa-chevron-up{
@@ -33,6 +44,9 @@
     color: var(--sky-blue);
 }
 
+.faq-hiddenPara-btn ~ .faq-hiddenPara{
+    transition: all 0.3s ease-in-out;
+}
 
 #first-btn:checked ~ .faq-hiddenPara{
     display: block;
