@@ -75,8 +75,19 @@
   justify-content: flex-end;
 }
 
+@keyframes startScale {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 #cta .animation {
-  animation: startFadeIn 1s ease-in-out;
+  animation: startScale 1.5s ease-in-out;
 }
 
 #cta .col-lg-9 {
@@ -130,7 +141,7 @@ section #team {
 
 #team .member {
   position: relative;
-  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 10%);
   padding: 3rem;
   border-radius: 0.5rem;
   background: #fff;
@@ -256,20 +267,20 @@ svg {
 
 /* ----------------- */
 
-#team .member span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 5rem;
-  height: 0.1rem;
-  background: #cbd6e9;
-  bottom: 0;
-  left: 0;
-}
-
 #team .member .member-info {
   padding-left: 3rem;
   line-height: 1.2;
+}
+
+@keyframes startTranslate {
+  from {
+    transform: translateY(4.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(1);
+    opacity: 1;
+  }
 }
 
 #team .section-title {
@@ -278,7 +289,31 @@ svg {
 }
 
 #team .animation {
-  animation: startFadeIn 1s ease-in-out;
+  animation: startTranslate 1s ease-in-out;
+}
+
+@keyframes Scale1 {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#team .animation1 {
+  animation: Scale1 1s ease-in-out;
+}
+#team .animation2 {
+  animation: Scale1 1.2s ease-in-out;
+}
+#team .animation3 {
+  animation: Scale1 1.4s ease-in-out;
+}
+#team .animation4 {
+  animation: Scale1 1.8s ease-in-out;
 }
 
 #team .section-title h2 {
@@ -325,6 +360,31 @@ svg {
 
 /* -------------pricing------------- */
 
+#pricing .animation {
+  animation: startTranslate 1s ease-in-out;
+}
+
+@keyframes startTranslateFar {
+  from {
+    transform: translateY(9rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(1);
+    opacity: 1;
+  }
+}
+
+#pricing .animation1 {
+  animation: startTranslateFar 1s ease-in-out;
+}
+#pricing .animation2 {
+  animation: startTranslateFar 1.2s ease-in-out;
+}
+#pricing .animation3 {
+  animation: startTranslateFar 1.4s ease-in-out;
+}
+
 #pricing .container {
   max-width: 1320px;
   width: 100%;
@@ -344,6 +404,10 @@ svg {
   width: auto;
   padding: 6rem 0;
   overflow: hidden;
+}
+
+#pricing .animation {
+  animation: startTranslate 1s ease-in-out;
 }
 
 #pricing .section-title h2 {
@@ -470,9 +534,9 @@ svg {
   -moz-osx-font-smoothing: grayscale; */
 }
 
-#pricing .bx-check:before {
+/* #pricing .bx-check:before {
   box-sizing: border-box;
-}
+} */
 
 #pricing ul .na i {
   color: #ccc;
