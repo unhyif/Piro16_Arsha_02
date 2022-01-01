@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import "css/reset.css";
+@import "css/variables.css";
+@import "css/yongbin.css";
+@import "css/yubin.css";
+@import "css/sukyung.css";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #444444;
+}
+
+.center-align {
+  margin: 0 auto;
+  width: 1080px;
+}
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 0.1rem;
+  height: 0.1rem;
+  margin: -0.1rem;
+  overflow: hidden;
+}
+.section__title {
+  color: var(--dark-blue);
+  font-family: "Jost", sans-serif;
+  font-size: var(--section__title-font-size);
+  font-weight: bold;
+}
+
+/* section title */
+.section-title{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2{
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--dark-blue);
+}
+
+.section-title h2::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+
+}
+
+.section-title h2::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
