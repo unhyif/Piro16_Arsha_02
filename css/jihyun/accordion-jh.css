@@ -1,18 +1,38 @@
+.target {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+.open-accordion {
+  display: block;
+}
+.close-accordion {
+  display: none;
+}
+span:target ~ .open-accordion {
+  display: none;
+}
+span:target ~ .close-accordion {
+  display: block;
+}
+
+.accordion-jh {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 .accordion-jh__li {
   width: 51.294rem;
   background: white;
   border-radius: 0.4rem;
-  padding: 2rem 2rem;
-  margin-bottom: 1.5rem;
+  padding: 2rem;
 }
-.accordion-jh__li:last-child {
-  margin-bottom: 0;
-}
+
 .accordion-jh__li a > div {
   height: 2.467rem;
   color: #343a40;
   font-family: "Poppins", sans-serif;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,18 +42,15 @@
   display: flex;
   align-items: center;
 }
-.accordion-jh__li a span:first-child {
+.accordion-jh__num {
   color: var(--sky-blue);
   font-size: 1.8rem;
   font-weight: 600;
   padding-right: 1.3rem;
 }
-.accordion-jh__li a span:nth-child(2) {
+.accordion-jh__title {
   font-size: 1.6rem;
   font-weight: 500;
-}
-.accordion-jh__li a:hover div {
-  color: var(--sky-blue);
 }
 .accordion-jh__li i {
   font-size: 1.3rem;
@@ -41,55 +58,32 @@
   top: 0.1rem;
   right: 0.5rem;
 }
+.accordion-jh__li a:hover div {
+  color: var(--sky-blue);
+}
 
-.target-fix {
-  display: block;
-  top: 0;
-  left: 0;
-  position: fixed;
+/* When accordion is open */
+
+.accordion-jh__li span:target ~ a div {
+  color: var(--sky-blue);
 }
-[id*="open-accordion"],
-[id*="close-accordion"] {
-  display: block;
+.accordion-jh__li span:target ~ a:hover .accordion-jh__title,
+.accordion-jh__li span:target ~ a:hover i {
+  opacity: 0.7;
 }
-[id*="close-accordion"] {
-  display: none;
-}
-.accordion-content {
+
+.accordion-jh__content {
   line-height: 1.5;
   height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-.accordion .accordion-jh__li span:target ~ [id*="close-accordion"] div {
-  color: var(--sky-blue);
-}
-.accordion
-  .accordion-jh__li
-  span:target
-  ~ [id*="close-accordion"]
-  div:hover
-  span:last-child,
-.accordion .accordion-jh__li span:target ~ [id*="close-accordion"] div:hover i {
-  opacity: 0.7;
-}
-/* .accordion .accordion-jh__li span:target:hover {
-  color: #73c5eb;
-} */
-.accordion .accordion-jh__li:first-of-type span:target ~ .accordion-content {
-  display: block;
+.accordion-jh__li:first-of-type span:target ~ .accordion-jh__content {
   height: 8.2rem;
   padding-top: 1rem;
 }
-.accordion .accordion-jh__li:nth-of-type(2) span:target ~ .accordion-content,
-.accordion .accordion-jh__li:nth-of-type(3) span:target ~ .accordion-content {
-  display: block;
+.accordion-jh__li:nth-of-type(2) span:target ~ .accordion-jh__content,
+.accordion-jh__li:nth-of-type(3) span:target ~ .accordion-jh__content {
   height: 13rem;
   padding-top: 1rem;
-}
-.accordion span:target ~ [id*="close-accordion"] {
-  display: block;
-}
-.accordion span:target ~ [id*="open-accordion"] {
-  display: none;
 }
