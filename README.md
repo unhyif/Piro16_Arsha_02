@@ -23,4 +23,5 @@ https://velog.io/@unhyif/Bootstrap-template-Clone-coding
 #### 220228
 
 - Removed unused codes
+- Set the height of accordion content automatically
 - Simplified CSS selectors

@@ -10,10 +10,10 @@
 .close-accordion {
   display: none;
 }
-span:target ~ .open-accordion {
+:target ~ .open-accordion {
   display: none;
 }
-span:target ~ .close-accordion {
+:target ~ .close-accordion {
   display: block;
 }
 
@@ -64,26 +64,28 @@ span:target ~ .close-accordion {
 
 /* When accordion is open */
 
-.accordion-jh__li span:target ~ a div {
+.accordion-jh__li :target ~ a div {
   color: var(--sky-blue);
 }
-.accordion-jh__li span:target ~ a:hover .accordion-jh__title,
-.accordion-jh__li span:target ~ a:hover i {
+.accordion-jh__li :target ~ a:hover .accordion-jh__title,
+.accordion-jh__li :target ~ a:hover i {
   opacity: 0.7;
 }
 
-.accordion-jh__content {
-  line-height: 1.5;
-  height: 0;
+.accordion-jh__content-container {
+  max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-.accordion-jh__li:first-of-type span:target ~ .accordion-jh__content {
-  height: 8.2rem;
-  padding-top: 1rem;
+:target ~ .accordion-jh__content-container {
+  max-height: 15rem;
 }
-.accordion-jh__li:nth-of-type(2) span:target ~ .accordion-jh__content,
-.accordion-jh__li:nth-of-type(3) span:target ~ .accordion-jh__content {
-  height: 13rem;
+.accordion-jh__content {
+  line-height: 1.5;
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+:target ~ .accordion-jh__content-container .accordion-jh__content {
   padding-top: 1rem;
+  transform: translateY(0);
 }
