@@ -14,6 +14,8 @@
 - `:target` pseudo-class
 - Created accordion & card components
 
+https://velog.io/@unhyif/Bootstrap-template-Clone-coding
+
 ---
 
 ## Updates
