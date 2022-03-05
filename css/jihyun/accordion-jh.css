@@ -1,46 +1,56 @@
+.target {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+.open-accordion {
+  display: block;
+}
+.close-accordion {
+  display: none;
+}
+:target ~ .open-accordion {
+  display: none;
+}
+:target ~ .close-accordion {
+  display: block;
+}
+
+.accordion-jh {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 .accordion-jh__li {
   width: 51.294rem;
   background: white;
   border-radius: 0.4rem;
-  padding: 2rem 2rem;
-  margin-bottom: 1.5rem;
-}
-.accordion-jh__li:last-child {
-  margin-bottom: 0;
-}
-.accordion-jh__li input {
-  position: fixed;
-  left: -9999px;
+  padding: 2rem;
 }
 
-/* When checkbox isn't checked */
-
-.accordion-jh__li label {
+.accordion-jh__li a > div {
   height: 2.467rem;
   color: #343a40;
   font-family: "Poppins", sans-serif;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
-.accordion-jh__li label > div {
+.accordion-jh__li a > div div {
   display: flex;
   align-items: center;
 }
-.accordion-jh__li label span:first-child {
+.accordion-jh__num {
   color: var(--sky-blue);
   font-size: 1.8rem;
   font-weight: 600;
   padding-right: 1.3rem;
 }
-.accordion-jh__li label span:nth-child(2) {
+.accordion-jh__title {
   font-size: 1.6rem;
   font-weight: 500;
-}
-.accordion-jh__li label:hover {
-  color: var(--sky-blue);
 }
 .accordion-jh__li i {
   font-size: 1.3rem;
@@ -48,43 +58,34 @@
   top: 0.1rem;
   right: 0.5rem;
 }
-.accordion-jh__li .fa-chevron-up {
-  top: -0.1rem;
-  right: 0.5rem;
-  display: none;
+.accordion-jh__li a:hover div {
+  color: var(--sky-blue);
 }
-#accordion-jh__check1 ~ #accordion-jh__pop1,
-#accordion-jh__check2 ~ #accordion-jh__pop2,
-#accordion-jh__check3 ~ #accordion-jh__pop3 {
-  line-height: 1.5;
-  height: 0;
-  overflow: hidden; /* to hide the content */
+
+/* When accordion is open */
+
+.accordion-jh__li :target ~ a div {
+  color: var(--sky-blue);
+}
+.accordion-jh__li :target ~ a:hover .accordion-jh__title,
+.accordion-jh__li :target ~ a:hover i {
+  opacity: 0.7;
+}
+
+.accordion-jh__content-container {
+  max-height: 0;
+  overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-
-/* When checkbox is checked */
-
-/* soft effects */
-#accordion-jh__check1:checked ~ #accordion-jh__pop1 {
-  height: 8.2rem; /* content height + padding-top (∵ box-sizing: border-box;) */
+:target ~ .accordion-jh__content-container {
+  max-height: 15rem;
+}
+.accordion-jh__content {
+  line-height: 1.5;
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+:target ~ .accordion-jh__content-container .accordion-jh__content {
   padding-top: 1rem;
-}
-#accordion-jh__check2:checked ~ #accordion-jh__pop2,
-#accordion-jh__check3:checked ~ #accordion-jh__pop3 {
-  height: 13rem;
-  padding-top: 1rem;
-}
-/* end soft effects */
-
-.accordion-jh__li input:checked ~ label {
-  color: var(--sky-blue); /* need to check */
-}
-.accordion-jh__li input:checked ~ label:hover {
-  color: #73c5eb;
-}
-.accordion-jh__li input:checked ~ label .fa-chevron-up {
-  display: block;
-}
-.accordion-jh__li input:checked ~ label .fa-chevron-down {
-  display: none;
+  transform: translateY(0);
 }

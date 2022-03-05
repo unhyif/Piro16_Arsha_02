@@ -6,6 +6,9 @@
     animation: upward-animation 1.5s 0s 1;
 }
 
+.section-title p{
+    line-height: 1.5;
+}
 
 #portfolio-main{
     padding: 6rem 0;
@@ -109,14 +112,16 @@
     margin-bottom: 0;
 }
 
-.portfolio-img:hover,
-.portfolio-info:hover + .portfolio-img{ 
+/* .portfolio-img:hover, .portfolio-info:hover ~ .portfolio-img { 
+    transform: scale(1.2,1.2);
+} */
+
+.portfolio-img-wrapper:hover .portfolio-img{
     transform: scale(1.2,1.2);
 }
 
 .portfolio-img:hover + .portfolio-info, .portfolio-info:hover{
-    opacity :1;
-    
+    opacity: 1;
 }
 
 .portfolio-Icon{

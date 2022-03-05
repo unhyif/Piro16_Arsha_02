@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arsha Bootstrap Template Demo</title>
+    <link rel="shortcut icon" href="logo.ico"/>
     <link rel="stylesheet" href="style.css" />
 
     <!-- SNS 아이콘으로 인해 아래 코드 추가함. -->
@@ -183,96 +184,142 @@
 
         </div>
       </section>
+      
       <section id="eun-ipsam">
-        <div class="eun-ipsam__center-align">
-          <div class="eun-ipsam__content">
-            <!-- eup-ipsam__text-wrapper -->
-            <div class="eup-ipsam__text-wrapper">
-              <h3 class="eun-ipsam__title">
-                Eum ipsam laborum deleniti
-                <strong style="font-weight: bold"
-                  >velit pariatur architecto aut nihil</strong
-                >
-              </h3>
-              <p class="eun-ipsam__sub">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
-                aute irure dolor in reprehenderit
-              </p>
-              <!-- accordion -->
-              <ul class="accordion-jh">
-                <li class="accordion-jh__li">
-                  <input type="checkbox" id="accordion-jh__check1" />
-                  <label for="accordion-jh__check1" onclick=""
-                    ><div>
-                      <span>01</span
-                      ><span
-                        >Non consectetur a erat nam at lectus urna duis?</span
-                      >
+        <div class="eun-ipsam__content">
+          <!-- eup-ipsam__text-wrapper -->
+          <div class="eup-ipsam__text-wrapper">
+            <h3 class="eun-ipsam__title">
+              Eum ipsam laborum deleniti
+              <strong style="font-weight: bold"
+                >velit pariatur architecto aut nihil</strong
+              >
+            </h3>
+            <p class="eun-ipsam__sub">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Duis aute irure
+              dolor in reprehenderit
+            </p>
+      
+            <!-- accordion -->
+            <ul class="accordion-jh">
+              <span class="target" id="accordion"></span>
+              <li class="accordion-jh__li">
+                <span class="target" id="accordion1"></span>
+                <a href="#accordion1" class="open-accordion" title="open">
+                  <div>
+                    <div>
+                      <span class="accordion-jh__num">01</span>
+                      <h5 class="accordion-jh__title">
+                        Non consectetur a erat nam at lectus urna duis?
+                      </h5>
                     </div>
-                    <i class="fas fa-chevron-down"></i
-                    ><i class="fas fa-chevron-up"></i
-                  ></label>
-                  <p class="accordion-jh__pop" id="accordion-jh__pop1">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </a>
+                <a href="#accordion" class="close-accordion" title="close">
+                  <div>
+                    <div>
+                      <span class="accordion-jh__num">01</span>
+                      <h5 class="accordion-jh__title">
+                        Non consectetur a erat nam at lectus urna duis?
+                      </h5>
+                    </div>
+                    <i class="fas fa-chevron-up"></i>
+                  </div>
+                </a>
+                <div class="accordion-jh__content-container">
+                  <p class="accordion-jh__content">
                     Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
-                    volutpat lacus laoreet non curabitur gravida. Venenatis
-                    lectus magna fringilla urna porttitor rhoncus dolor purus
-                    non.
+                    volutpat lacus laoreet non curabitur gravida. Venenatis lectus
+                    magna fringilla urna porttitor rhoncus dolor purus non.
                   </p>
-                </li>
-                <li class="accordion-jh__li">
-                  <input type="checkbox" id="accordion-jh__check2" />
-                  <label for="accordion-jh__check2" onclick=""
-                    ><div>
-                      <span>02</span
-                      ><span>Feugiat scelerisque varius morbi enim nunc?</span>
+                </div>
+              </li>
+              <li class="accordion-jh__li">
+                <span class="target" id="accordion2"></span>
+                <a href="#accordion2" class="open-accordion" title="open">
+                  <div>
+                    <div>
+                      <span class="accordion-jh__num">02</span>
+                      <h5 class="accordion-jh__title">
+                        Feugiat scelerisque varius morbi enim nunc?
+                      </h5>
                     </div>
-                    <i class="fas fa-chevron-down"></i
-                    ><i class="fas fa-chevron-up"></i
-                  ></label>
-                  <p class="accordion-jh__pop" id="accordion-jh__pop2">
-                    Dolor sit amet consectetur adipiscing elit pellentesque
-                    habitant morbi. Id interdum velit laoreet id donec ultrices.
-                    Fringilla phasellus faucibus scelerisque eleifend donec
-                    pretium. Est pellentesque elit ullamcorper dignissim. Mauris
-                    ultrices eros in cursus turpis massa tincidunt dui.
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </a>
+                <a href="#accordion" class="close-accordion" title="close">
+                  <div>
+                    <div>
+                      <span class="accordion-jh__num">02</span>
+                      <h5 class="accordion-jh__title">
+                        Feugiat scelerisque varius morbi enim nunc?
+                      </h5>
+                    </div>
+                    <i class="fas fa-chevron-up"></i>
+                  </div>
+                </a>
+                <div class="accordion-jh__content-container">
+                  <p class="accordion-jh__content">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant
+                    morbi. Id interdum velit laoreet id donec ultrices. Fringilla
+                    phasellus faucibus scelerisque eleifend donec pretium. Est
+                    pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
+                    cursus turpis massa tincidunt dui.
                   </p>
-                </li>
-                <li class="accordion-jh__li">
-                  <input type="checkbox" id="accordion-jh__check3" />
-                  <label for="accordion-jh__check3" onclick=""
-                    ><div>
-                      <span>03</span
-                      ><span>Dolor sit amet consectetur adipiscing elit?</span>
+                </div>
+              </li>
+              <li class="accordion-jh__li">
+                <span class="target" id="accordion3"></span>
+                <a href="#accordion3" class="open-accordion" title="open">
+                  <div>
+                    <div>
+                      <span class="accordion-jh__num">03</span>
+                      <h5 class="accordion-jh__title">
+                        Dolor sit amet consectetur adipiscing elit?
+                      </h5>
                     </div>
-                    <i class="fas fa-chevron-down"></i
-                    ><i class="fas fa-chevron-up"></i
-                  ></label>
-                  <p class="accordion-jh__pop" id="accordion-jh__pop3">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </a>
+                <a href="#accordion" class="close-accordion" title="close">
+                  <div>
+                    <div>
+                      <span class="accordion-jh__num">03</span>
+                      <h5 class="accordion-jh__title">
+                        Dolor sit amet consectetur adipiscing elit?
+                      </h5>
+                    </div>
+                    <i class="fas fa-chevron-up"></i>
+                  </div>
+                </a>
+                <div class="accordion-jh__content-container">
+                  <p class="accordion-jh__content">
                     Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                    sagittis orci. Faucibus pulvinar elementum integer enim. Sem
-                    nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
-                    pellentesque eu tincidunt. Lectus urna duis convallis
-                    convallis tellus. Urna molestie at elementum eu facilisis
-                    sed odio morbi quis
+                    sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla
+                    pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
+                    eu tincidunt. Lectus urna duis convallis convallis tellus. Urna
+                    molestie at elementum eu facilisis sed odio morbi quis
                   </p>
-                </li>
-              </ul>
-              <!-- end accordion -->
-            </div>
-            <!-- end eup-ipsam__text-wrapper -->
-
-            <!-- eup-ipsam__img-wrapper -->
-            <div class="eup-ipsam__img-wrapper">
-              <img
-                src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/why-us.png"
-                alt="why us"
-              />
-            </div>
-            <!-- end eup-ipsam__img-wrapper -->
+                </div>
+              </li>
+            </ul>
+            <!-- end accordion -->
           </div>
+          <!-- end eup-ipsam__text-wrapper -->
+      
+          <!-- eup-ipsam__img-wrapper -->
+          <div class="eup-ipsam__img-wrapper">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/why-us.png"
+              alt="why us"
+            />
+          </div>
+          <!-- end eup-ipsam__img-wrapper -->
         </div>
       </section>
+      
       <section id="skills">
         <div class="skills__content">
           <!-- skills__img-wrapper -->
@@ -283,37 +330,33 @@
             />
           </div>
           <!-- end skills__img-wrapper -->
-
+      
           <!-- skills__text-wrapper -->
           <div class="skills__text-wrapper">
             <h3 class="skills__title">
               Voluptatem dignissimos provident quasi corporis voluptates
             </h3>
             <p class="skills__sub">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <ul class="skills__progress">
-              <li class="each-skill">
-                <div class="skill__title">
-                  <span>html</span><span>100%</span>
-                </div>
+              <li class="skill">
+                <div class="skill__title"><span>html</span><span>100%</span></div>
                 <div class="progress-bar"><div class="percent"></div></div>
               </li>
-              <li class="each-skill">
+              <li class="skill">
                 <div class="skill__title"><span>css</span><span>90%</span></div>
                 <div class="progress-bar"><div class="percent"></div></div>
               </li>
-              <li class="each-skill">
+              <li class="skill">
                 <div class="skill__title">
                   <span>javascript</span><span>75%</span>
                 </div>
                 <div class="progress-bar"><div class="percent"></div></div>
               </li>
-              <li class="each-skill">
-                <div class="skill__title">
-                  <span>photoshop</span><span>55%</span>
-                </div>
+              <li class="skill">
+                <div class="skill__title"><span>photoshop</span><span>55%</span></div>
                 <div class="progress-bar"><div class="percent"></div></div>
               </li>
             </ul>
@@ -321,56 +364,58 @@
           <!-- end skills__text-wrapper -->
         </div>
       </section>
+      
       <section id="services">
-        <div class="services__center-align">
+        <div class="services__content">
           <div class="section-title section-title-jh">
-            <h2 class="services__title section__title">services</h2>
+            <h2 class="services__title">services</h2>
             <p class="services__sub">
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+              aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+              quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+              sit in iste officiis commodi quidem hic quas.
             </p>
           </div>
+      
           <!-- cards -->
           <div class="cards">
             <div class="card">
               <i class="bx bxl-dribbble"></i>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>
-                Voluptatum deleniti atque corrupti quos dolores et quas
-                molestias excepturi
+              <a href="#target"><h4 class="card__title">Lorem Ipsum</h4></a>
+              <p class="card__sub">
+                Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                excepturi
               </p>
             </div>
             <div class="card">
               <i class="bx bx-file"></i>
-              <h4><a href="">Sed ut perspici</a></h4>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore
+              <a href="#target"><h4 class="card__title">Sed ut perspici</h4></a>
+              <p class="card__sub">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore
               </p>
             </div>
             <div class="card">
               <i class="bx bx-tachometer"></i>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia
+              <a href="#target"><h4 class="card__title">Magni Dolores</h4></a>
+              <p class="card__sub">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia
               </p>
             </div>
             <div class="card">
-              <i class="bx bxl-dribbble"></i>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>
+              <i class="bx bx-layer"></i>
+              <a href="#target"><h4 class="card__title">Nemo Enim</h4></a>
+              <p class="card__sub">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis
               </p>
             </div>
           </div>
           <!-- end cards -->
-          </div>
         </div>
       </section>
+
       <section id="cta">
         <div class="center-align">
           <!--최종 끝 -->
@@ -711,7 +756,7 @@
                     <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
                     <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
                   </ul>
-                  <a href="#" class="buy-btn">Get Started</a>
+                  <a href="#" class="buy-btn-start">Get Started</a>
                 </div>
               </div>
               <div class="col-lg-4 mt-4 mt-lg-0 aos-init animation3">
@@ -743,91 +788,100 @@
             </p>
           </div>
           <div class="faq-main">
-            <ul class="faq-hidden">
-              <li class="faq-hidden-li">
-                <input name="para" type="radio" id="first-btn" />
-                <label for="first-btn" class="faq-hiddenPara-btn" onclick="">
+            <div class="faq-accordion">
+              <span class="faq-target-fix" id="faq-accoordion"></span>
+              <!-- first accodion -->
+              <div>
+                <span class="faq-target-fix" id="faq-accordion1"></span>
+                <a href="#faq-accordion1" id="faq-open-accordion1" title="open">
                   <i class="far fa-question-circle"></i>
-                  Non consectetur a erat nam at lectus urna duis?
-                  <div class="faq-icon">
-                    <i class="fas fa-chevron-down"></i>
+                  Non consectetur a erat nam at lectus urna duis? 
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+                <a href="#faq-accordion" id="faq-close-accordion1" title="close">
+                  <i class="far fa-question-circle" ></i>
+                  <p>
+                    Non consectetur a erat nam at lectus urna duis?
                     <i class="fas fa-chevron-up"></i>
+                  </p>
+                </a>
 
-                  </div>
-                </label>
-                <p class="faq-hiddenPara">
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                </p>
-              </li>
-
-              <li class="faq-hidden-li">
-                <input name="para" type="radio" id="second-btn" />
-                <label for="second-btn" class="faq-hiddenPara-btn" onclick="">
+                <div class="faq-accordion-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+              </div>
+              <!-- second accordion -->
+              <div>
+                <span class="faq-target-fix" id="faq-accordion2"></span>
+                <a href="#faq-accordion2" id="faq-open-accordion2" title="open">
                   <i class="far fa-question-circle"></i>
                   Feugiat scelerisque varius morbi enim nunc?
-                  <div class="faq-icon">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-chevron-up"></i>
-
-                  </div>
-                </label>
-                <p class="faq-hiddenPara">
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                </p>
-
-              </li>
-              
-              <li class="faq-hidden-li">
-                <input name="para" type="radio" id="third-btn" />
-                <label for="third-btn" class="faq-hiddenPara-btn" onclick="">
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+                <a href="#faq-accordion" id="faq-close-accordion2" title="close">
+                  <i class="far fa-question-circle"></i>
+                  Feugiat scelerisque varius morbi enim nunc?
+                  <i class="fas fa-chevron-up"></i>
+                </a>
+                <div class="faq-accordion-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.t</p>
+                </div>
+              </div>
+              <!-- third accordion -->
+              <div>
+                <span class="faq-target-fix" id="faq-accordion3"></span>
+                <a href="#faq-accordion3" id="faq-open-accordion3" title="open">
                   <i class="far fa-question-circle"></i>
                   Dolor sit amet consectetur adipiscing elit?
-                  <div class="faq-icon">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-chevron-up"></i>
-
-                  </div>
-                </label>
-                <p class="faq-hiddenPara">
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                </p>
-
-              </li>
-
-              <li class="faq-hidden-li">
-                <input name="para" type="radio" id="fourth-btn" />
-                <label for="fourth-btn" class="faq-hiddenPara-btn" onclick="">
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+                <a href="#faq-accordion" id="faq-close-accordion3" title="close">
+                  <i class="far fa-question-circle"></i>
+                  Dolor sit amet consectetur adipiscing elit?
+                  <i class="fas fa-chevron-up"></i>
+                </a>
+                <div class="faq-accordion-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+              </div>
+              <!-- fourth accordion -->
+              <div>
+                <span class="faq-target-fix" id="faq-accordion4"></span>
+                <a href="#faq-accordion4" id="faq-open-accordion4" title="open">
                   <i class="far fa-question-circle"></i>
                   Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
-                  <div class="faq-icon">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-chevron-up"></i>
-
-                  </div>
-                </label>
-                <p class="faq-hiddenPara">
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                </p>
-
-              </li>
-              <li class="faq-hidden-li">
-                <input name="para" type="radio" id="fifth-btn" />
-                <label for="fifth-btn" class="faq-hiddenPara-btn" onclick="">
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+                <a href="#faq-accordion" id="faq-close-accordion4" title="close">
+                  <i class="far fa-question-circle"></i>
+                  Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                  <i class="fas fa-chevron-up"></i>
+                </a>
+                <div class="faq-accordion-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</p>
+                </div>
+              </div>
+              <!-- fifth accordion -->
+              <div>
+                <span class="faq-target-fix" id="faq-accordion5"></span>
+                
+                <a href="#faq-accordion5" id="faq-open-accordion5" title="open">
                   <i class="far fa-question-circle"></i>
                   Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?
-                  <div class="faq-icon">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-chevron-up"></i>
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+                <a href="#faq-accordion" id="faq-close-accordion5" title="close">
+                  <i class="far fa-question-circle"></i>
+                  Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?
+                  <i class="fas fa-chevron-up"></i>
+                </a>
+                <div class="faq-accordion-content">
+                  <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
+                </div>
+              </div>
+            
+            </div>
 
-                  </div>
-                </label>
-                <p class="faq-hiddenPara">
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                </p>
-
-              </li>
-          
-            </ul>
           </div>
 
         </div>
@@ -908,6 +962,9 @@
         </div>
       </section>
     </main>
+
+<!--------------------------------------------------------------------------------------->
+
     <footer>
       <!-------------------------------------------------------->
       <section id="newsletter"> 
@@ -946,7 +1003,7 @@
                   <br>
                   New York, NY 535022
                   <br>
-                  United States A108 Adam Street
+                  United States
                   <br>
                   <br>
                   <span class="ads-bold">Phone:</span> +1 5589 55488 55
